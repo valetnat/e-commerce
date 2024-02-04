@@ -1,0 +1,29 @@
+[
+{
+    "model": "products.limitedoffer",
+    "pk": 1,
+    "fields": {
+        "product": 6,
+        "end_date": "2023-12-31T23:59:00Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.limitedoffer",
+    "pk": 2,
+    "fields": {
+        "product": 12,
+        "end_date": "2023-12-31T23:59:00Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.limitedoffer",
+    "pk": 3,
+    "fields": {
+        "product": 39,
+        "end_date": "2023-12-31T23:59:00Z",
+        "archived": false
+    }
+}
+]

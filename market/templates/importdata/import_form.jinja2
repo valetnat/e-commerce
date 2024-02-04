@@ -1,0 +1,31 @@
+<div>
+    {% if import_is_running %}
+        <div class="Section-title">{{ _("Предыдущий импорт ещё не выполнен. Пожалуйста, дождитесь его окончания.") }} </div>
+    {% else %}
+        {% if import_files %}
+            <form action="" method="post" accept-charset="utf-8">
+            <label>{{ _("Выбирете файл(ы) для импорта. *Если ни один файл не выбран, импорт будет инициирован для всех файлов из списка.") }}</label>
+                <div id="id_files">
+
+                    {% for file in import_files %}
+                        <div>
+                            <label for="id_files_{{ file }}">
+                                <input id="id_files_{{ file }}" type="checkbox" name="files" value="{{ file }}">
+                                {{ file }}
+                            </label>
+                        </div>
+                    {% endfor %}
+                </div>
+                <p></p>
+                <div>
+                    <label for="mail_to">{{ _("Адрес для отправки отчета:") }}</label>
+                    <input id="mail_to" type="email" name="mail_to" placeholder="example@gmail.com" required>
+                </div>
+                {% csrf_token %}
+                <p><input type="submit" value="{{ _("Импортировать") }}"></p>
+            {% else %}
+                <div class="Section-title">{{ _("Нет файлов для импорта. Пожалуйста, обратитесь к администратору.") }}</div>
+            {% endif %}
+       </form>
+    {% endif %}
+</div>

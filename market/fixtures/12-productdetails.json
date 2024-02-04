@@ -1,0 +1,488 @@
+[
+{
+    "model": "products.productdetail",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "detail": 1,
+        "value": "42"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 2,
+    "fields": {
+        "product": 1,
+        "detail": 2,
+        "value": "80"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 3,
+    "fields": {
+        "product": 1,
+        "detail": 3,
+        "value": "белый"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 7,
+    "fields": {
+        "product": 2,
+        "detail": 3,
+        "value": "черный"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 8,
+    "fields": {
+        "product": 2,
+        "detail": 4,
+        "value": "оптическая светодиодная"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 9,
+    "fields": {
+        "product": 2,
+        "detail": 5,
+        "value": "Bluetooth"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 10,
+    "fields": {
+        "product": 3,
+        "detail": 1,
+        "value": "2200"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 11,
+    "fields": {
+        "product": 3,
+        "detail": 3,
+        "value": "Красный"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 12,
+    "fields": {
+        "product": 3,
+        "detail": 2,
+        "value": "1,8"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 13,
+    "fields": {
+        "product": 4,
+        "detail": 6,
+        "value": "ntel Celeron"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 14,
+    "fields": {
+        "product": 4,
+        "detail": 7,
+        "value": "Intel J4125"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 15,
+    "fields": {
+        "product": 4,
+        "detail": 8,
+        "value": "8 ГБ"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 16,
+    "fields": {
+        "product": 4,
+        "detail": 9,
+        "value": "2700 МГц"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 17,
+    "fields": {
+        "product": 4,
+        "detail": 3,
+        "value": "серый"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 18,
+    "fields": {
+        "product": 5,
+        "detail": 10,
+        "value": "6.7\" (2796x1290), Full HD, OLED"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 19,
+    "fields": {
+        "product": 5,
+        "detail": 11,
+        "value": "iOS 16"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 20,
+    "fields": {
+        "product": 5,
+        "detail": 12,
+        "value": "240 г"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 21,
+    "fields": {
+        "product": 6,
+        "detail": 13,
+        "value": "есть"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 22,
+    "fields": {
+        "product": 6,
+        "detail": 12,
+        "value": "50.8 г"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 23,
+    "fields": {
+        "product": 7,
+        "detail": 1,
+        "value": "640"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 24,
+    "fields": {
+        "product": 7,
+        "detail": 14,
+        "value": "автономное, от электросети"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 25,
+    "fields": {
+        "product": 7,
+        "detail": 15,
+        "value": "2"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 26,
+    "fields": {
+        "product": 8,
+        "detail": 1,
+        "value": "10"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 27,
+    "fields": {
+        "product": 8,
+        "detail": 16,
+        "value": "50 Гц"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 28,
+    "fields": {
+        "product": 8,
+        "detail": 17,
+        "value": "20 кГц"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 29,
+    "fields": {
+        "product": 8,
+        "detail": 18,
+        "value": "42 мм"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 30,
+    "fields": {
+        "product": 9,
+        "detail": 3,
+        "value": "белый"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 31,
+    "fields": {
+        "product": 9,
+        "detail": 19,
+        "value": "мобильный"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 32,
+    "fields": {
+        "product": 9,
+        "detail": 1,
+        "value": "755"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 33,
+    "fields": {
+        "product": 9,
+        "detail": 12,
+        "value": "22.5 кг"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 34,
+    "fields": {
+        "product": 9,
+        "detail": 20,
+        "value": "355 х 703 х 345 мм"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 35,
+    "fields": {
+        "product": 10,
+        "detail": 21,
+        "value": "электрическая"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 36,
+    "fields": {
+        "product": 10,
+        "detail": 20,
+        "value": "85 х 60 х 60 см"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 37,
+    "fields": {
+        "product": 10,
+        "detail": 22,
+        "value": "4"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 38,
+    "fields": {
+        "product": 10,
+        "detail": 23,
+        "value": "60 л"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 39,
+    "fields": {
+        "product": 11,
+        "detail": 10,
+        "value": "55\""
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 40,
+    "fields": {
+        "product": 11,
+        "detail": 24,
+        "value": "3840x2160"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 41,
+    "fields": {
+        "product": 11,
+        "detail": 25,
+        "value": "HDR10, HDR10+, HLG"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 42,
+    "fields": {
+        "product": 11,
+        "detail": 26,
+        "value": "120 Гц"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 43,
+    "fields": {
+        "product": 11,
+        "detail": 27,
+        "value": "Да"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 44,
+    "fields": {
+        "product": 12,
+        "detail": 3,
+        "value": "белый/черный"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 45,
+    "fields": {
+        "product": 12,
+        "detail": 28,
+        "value": "512 Гб"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 46,
+    "fields": {
+        "product": 12,
+        "detail": 29,
+        "value": "GDDR6"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 47,
+    "fields": {
+        "product": 13,
+        "detail": 11,
+        "value": "Android"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 48,
+    "fields": {
+        "product": 14,
+        "detail": 3,
+        "value": "черный"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 49,
+    "fields": {
+        "product": 14,
+        "detail": 30,
+        "value": "1,5 м"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 50,
+    "fields": {
+        "product": 14,
+        "detail": 31,
+        "value": "USB"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 51,
+    "fields": {
+        "product": 15,
+        "detail": 3,
+        "value": "серый"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 52,
+    "fields": {
+        "product": 15,
+        "detail": 6,
+        "value": "Intel Core i3"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 54,
+    "fields": {
+        "product": 15,
+        "detail": 8,
+        "value": "8 ГБ"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 55,
+    "fields": {
+        "product": 15,
+        "detail": 24,
+        "value": "2160x1440"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 56,
+    "fields": {
+        "product": 16,
+        "detail": 1,
+        "value": "6"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 57,
+    "fields": {
+        "product": 16,
+        "detail": 16,
+        "value": "100"
+    }
+},
+{
+    "model": "products.productdetail",
+    "pk": 58,
+    "fields": {
+        "product": 16,
+        "detail": 17,
+        "value": "20000"
+    }
+}
+]

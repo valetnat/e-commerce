@@ -1,0 +1,26 @@
+{% extends 'base.jinja2' %}
+
+{% block title %}
+{{_("Создание нового заказа в магазине:")}}
+{% endblock %}
+
+{% block middle %}
+{{ shop_offer }}
+<div class="Middle Middle_top">
+  <div class="Section Section_column Section_columnLeft">
+    <div class="wrap">
+        {% for shop in shops %}
+            {{ shop }}
+        {% endfor %}
+
+      <form method="post">
+          {% csrf_token %}
+          {{ form.as_p() }}
+      <button type="submit">{{_("Создать")}}</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

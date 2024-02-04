@@ -1,0 +1,177 @@
+[
+{
+    "model": "products.tag",
+    "pk": 1,
+    "fields": {
+        "name": "Игры"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 2,
+    "fields": {
+        "name": "Кухня"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 3,
+    "fields": {
+        "name": "Холодильник"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 4,
+    "fields": {
+        "name": "Морозильник"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 5,
+    "fields": {
+        "name": "Учеба"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 6,
+    "fields": {
+        "name": "Дизайн"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 7,
+    "fields": {
+        "name": "работа"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 8,
+    "fields": {
+        "name": "apple"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 9,
+    "fields": {
+        "name": "наушники"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 10,
+    "fields": {
+        "name": "музыка"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 11,
+    "fields": {
+        "name": "караоке"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 12,
+    "fields": {
+        "name": "дом"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 13,
+    "fields": {
+        "name": "Weissgauff"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 14,
+    "fields": {
+        "name": "4К"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 15,
+    "fields": {
+        "name": "игры"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 16,
+    "fields": {
+        "name": "android"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 17,
+    "fields": {
+        "name": "Xiaomi"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 18,
+    "fields": {
+        "name": "acer"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 19,
+    "fields": {
+        "name": "realme"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 20,
+    "fields": {
+        "name": "DEXP"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 21,
+    "fields": {
+        "name": "ASUS"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 22,
+    "fields": {
+        "name": "Canon"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 23,
+    "fields": {
+        "name": "JBL"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 24,
+    "fields": {
+        "name": "LG"
+    }
+},
+{
+    "model": "products.tag",
+    "pk": 25,
+    "fields": {
+        "name": "Nikon"
+    }
+}
+]

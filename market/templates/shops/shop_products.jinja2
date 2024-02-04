@@ -1,0 +1,44 @@
+{% extends 'shops/base_shop.jinja2' %}
+
+
+{% block title %}
+{{_("Продукты магазина")}} {{ shop.name }}
+{% endblock %}
+
+
+{% block active_shop_products %}
+{% include "profiles/activate_menu.jinja2" %}
+{% endblock %}
+
+
+{% block shop_content %}
+<div class="Account-column">
+  <h2 class="Section-title">{{_("Товары магазина")}} {{ shop.name }}</h2>
+  <div class="Cards Cards_blog" style="margin-bottom:40px;">
+    <ul class="Cards Cards_blog">
+    {% for product in shop.products.all() %}
+      <li class="Card">
+        <a class="Card-picture" href="{{ url('products:product-detail', pk=product.pk) }}" style="max-width:297px">
+        {% if product.preview %}
+        <img  src="{{ product.preview.url }}" alt="миникартинка товара" ></a>
+        {% else %}
+        {{_("Изображение товара отсутствует")}}
+        {% endif %}
+        <div class="Card-content">
+          <strong class="Card-title">
+            <a href="{{ url('products:product-detail', pk=product.pk) }}">{{ product.name }}</a>
+          </strong>
+          <div class="Card-description">
+            {{ product.description|wordcount }}
+            {% if product.description|length > 50  %}
+            {{ product.description[:45] + '...' }}
+            {% endif %}
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

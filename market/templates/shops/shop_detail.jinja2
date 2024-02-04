@@ -1,0 +1,36 @@
+{% extends 'shops/base_shop.jinja2' %}
+
+{% block title %}
+{{_("Информация о магазине")}} {{ shop.name }}
+{% endblock %}
+
+{% block active_shop %}
+{% include "profiles/activate_menu.jinja2" %}
+{% endblock %}
+
+
+{% block shop_content %}
+
+{% if shop.avatar %}
+    <div class="Account-avatar" style="max-width: 400px; max-height: 310px;">
+      <img src="{{ shop.avatar.url }}" alt="card.jpg" />
+{% else %}
+    <div class="Account-avatar" style="max-width: 400px; max-height: 310px;">{{_("У магазина нет аватара")}}</div>
+{% endif %}
+    </div>
+<div class="Account-column" style="padding-left:40px;">
+  <div class="Account-name">{{ shop.name }}</div>
+  {% if request.user.pk==shop.user.pk  %}
+  <a class="Account-editLink" href="{{ url('shops:shop-update', pk=shop.pk) }}">{{_("Редактировать профиль")}}</a>
+  {% endif %}
+  <p>{{_("Телефон магазина")}}: {{ shop.phone }}</p>
+  <p>{{_("Email магазина")}}: {{ shop.email }}</p>
+  <p>{{_("Владелец магазина")}}: {{ shop.user }}</p>
+  <p>{{_("О магазине")}}: </p>
+  <p style="max-width: 600px">{{ shop.about }}</p>
+
+  {# <p><a class="Account-editLink" href="{{ url('shops:offer-create') }}">{{_("Создать новый заказ")}}</a></p> #}
+</div>
+
+
+{% endblock %}

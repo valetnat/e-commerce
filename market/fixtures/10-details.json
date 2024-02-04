@@ -1,0 +1,219 @@
+[
+{
+    "model": "products.detail",
+    "pk": 1,
+    "fields": {
+        "name": "Мощность, Вт"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 2,
+    "fields": {
+        "name": "Объем, л"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 3,
+    "fields": {
+        "name": "Цвет"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 4,
+    "fields": {
+        "name": "Принцип работы"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 5,
+    "fields": {
+        "name": "Тип подключения"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 6,
+    "fields": {
+        "name": "Линейка процессора"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 7,
+    "fields": {
+        "name": "Процессор"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 8,
+    "fields": {
+        "name": "Оперативная память"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 9,
+    "fields": {
+        "name": "Частота процессора"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 10,
+    "fields": {
+        "name": "Экран"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 11,
+    "fields": {
+        "name": "Версия ОС на начало продаж"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 12,
+    "fields": {
+        "name": "Вес"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 13,
+    "fields": {
+        "name": "Система активного шумоподавления (ANC)"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 14,
+    "fields": {
+        "name": "Питание"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 15,
+    "fields": {
+        "name": "Количество полос AC"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 16,
+    "fields": {
+        "name": "Минимальная воспроизводимая частота"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 17,
+    "fields": {
+        "name": "Максимальная воспроизводимая частота"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 18,
+    "fields": {
+        "name": "Диаметр широкополосного динамика"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 19,
+    "fields": {
+        "name": "Тип кондиционера"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 20,
+    "fields": {
+        "name": "Размеры (ШхВхГ)"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 21,
+    "fields": {
+        "name": "Тип варочной панели"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 22,
+    "fields": {
+        "name": "Общее количество конфорок"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 23,
+    "fields": {
+        "name": "Объем духовки"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 24,
+    "fields": {
+        "name": "Разрешение"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 25,
+    "fields": {
+        "name": "форматы"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 26,
+    "fields": {
+        "name": "частота"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 27,
+    "fields": {
+        "name": "SmartTV"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 28,
+    "fields": {
+        "name": "Объем встроенной памяти"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 29,
+    "fields": {
+        "name": "Тип оперативной памяти"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 30,
+    "fields": {
+        "name": "Длинна кабеля"
+    }
+},
+{
+    "model": "products.detail",
+    "pk": 31,
+    "fields": {
+        "name": "Интерфейс подключения"
+    }
+}
+]

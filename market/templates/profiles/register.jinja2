@@ -1,0 +1,31 @@
+{% extends 'base.jinja2' %}
+
+{% block title %}
+{{_("Registration page")}}
+{% endblock %}
+
+{% block extraheader %}
+
+{% endblock %}
+
+
+{% block middle %}
+
+<div class="Middle">
+  <div class="Section">
+    <div class="wrap">
+      <div class="wrapper" style="width: 600px;">
+<!--      <div class="Cards" style="margin-bottom: 0;">-->
+        <h2 class="header">{{_("Страница регистрации")}}</h2>
+        <form method="post">
+          {% csrf_token %}
+          {{ form.as_p() }}
+          <input type="submit" value="Registration">
+<!--          <button type="submit" class="btn btn_square btn_dark">Registration</button>-->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

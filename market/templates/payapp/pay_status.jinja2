@@ -1,0 +1,46 @@
+{% extends "payapp/base_pay.jinja2" %}
+
+{% block middle %}
+<div class="Middle Middle_top">
+        <div class="Middle-top">
+            <div class="wrap">
+                <div class="Middle-header">
+                    <h1 class="Middle-title">
+                        {% if not order.payrecords.first().answer_from_api %} {{_("Ожидание оплаты")}}
+                        {% else %} {{_("Статус")}}
+                        {% endif %}
+                    </h1>
+                    <ul class="breadcrumbs Middle-breadcrumbs">
+                        <li class="breadcrumbs-item"><a href="{{ url('products:home-page') }}">{{_("home")}}</a>
+                        </li>
+                        <li class="breadcrumbs-item breadcrumbs-item_current">
+                            <span>
+                                {% if not order.payrecords.first().answer_from_api %} {{_("Ожидание оплаты")}}
+                                {% else %} {{_("Статус")}}
+                                {% endif %}
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <div class="wrap">
+                <div class="ProgressPayment">
+                    {% if is_order_paid %}
+                        {% include "payapp/progresspayment-ok.jinja2" %}
+                    {% else  %}
+                        {% if not order.payrecords.first().answer_from_api %}
+                            {% include "payapp/progresspayment-wait.jinja2" %}
+                        {% else %}
+                            {% include "payapp/progresspayment-not.jinja2" %}
+                            <div>
+                            {{ order.payrecords.first().answer_from_api.error }}
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

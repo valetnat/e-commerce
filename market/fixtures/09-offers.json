@@ -1,0 +1,1634 @@
+[
+{
+    "model": "shops.offer",
+    "pk": 1,
+    "fields": {
+        "shop": 1,
+        "product": 1,
+        "price": "100.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 2,
+    "fields": {
+        "shop": 2,
+        "product": 1,
+        "price": "90.00",
+        "remains": 2,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 3,
+    "fields": {
+        "shop": 3,
+        "product": 1,
+        "price": "95.00",
+        "remains": 0,
+        "payment_method": "CASH",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 4,
+    "fields": {
+        "shop": 2,
+        "product": 2,
+        "price": "350.00",
+        "remains": 20,
+        "payment_method": "CASH",
+        "delivery_method": "FREE"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 5,
+    "fields": {
+        "shop": 3,
+        "product": 2,
+        "price": "340.00",
+        "remains": 54,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 6,
+    "fields": {
+        "shop": 3,
+        "product": 2,
+        "price": "370.00",
+        "remains": 62,
+        "payment_method": "CARD",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 7,
+    "fields": {
+        "shop": 1,
+        "product": 3,
+        "price": "540.00",
+        "remains": 2,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 8,
+    "fields": {
+        "shop": 3,
+        "product": 3,
+        "price": "550.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 9,
+    "fields": {
+        "shop": 3,
+        "product": 4,
+        "price": "39990.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "FREE"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 10,
+    "fields": {
+        "shop": 2,
+        "product": 4,
+        "price": "39990.00",
+        "remains": 20,
+        "payment_method": "CASH",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 11,
+    "fields": {
+        "shop": 4,
+        "product": 4,
+        "price": "40000.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 12,
+    "fields": {
+        "shop": 1,
+        "product": 5,
+        "price": "120000.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 13,
+    "fields": {
+        "shop": 2,
+        "product": 5,
+        "price": "120999.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 14,
+    "fields": {
+        "shop": 3,
+        "product": 5,
+        "price": "119999.00",
+        "remains": 20,
+        "payment_method": "CASH",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 15,
+    "fields": {
+        "shop": 4,
+        "product": 5,
+        "price": "124000.00",
+        "remains": 20,
+        "payment_method": "CASH",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 16,
+    "fields": {
+        "shop": 1,
+        "product": 6,
+        "price": "22000.00",
+        "remains": 20,
+        "payment_method": "CASH",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 17,
+    "fields": {
+        "shop": 2,
+        "product": 6,
+        "price": "22300.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 18,
+    "fields": {
+        "shop": 2,
+        "product": 6,
+        "price": "23000.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 19,
+    "fields": {
+        "shop": 3,
+        "product": 6,
+        "price": "21999.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 20,
+    "fields": {
+        "shop": 1,
+        "product": 7,
+        "price": "35000.00",
+        "remains": 0,
+        "payment_method": "CARD",
+        "delivery_method": "FREE"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 21,
+    "fields": {
+        "shop": 2,
+        "product": 7,
+        "price": "34000.00",
+        "remains": 26,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 22,
+    "fields": {
+        "shop": 1,
+        "product": 8,
+        "price": "8000.00",
+        "remains": 24,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 23,
+    "fields": {
+        "shop": 3,
+        "product": 8,
+        "price": "7999.00",
+        "remains": 230,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 24,
+    "fields": {
+        "shop": 1,
+        "product": 9,
+        "price": "17000.00",
+        "remains": 220,
+        "payment_method": "CASH",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 25,
+    "fields": {
+        "shop": 3,
+        "product": 9,
+        "price": "17100.00",
+        "remains": 130,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 26,
+    "fields": {
+        "shop": 4,
+        "product": 9,
+        "price": "17999.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 27,
+    "fields": {
+        "shop": 1,
+        "product": 10,
+        "price": "34000.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 28,
+    "fields": {
+        "shop": 2,
+        "product": 10,
+        "price": "34500.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 29,
+    "fields": {
+        "shop": 4,
+        "product": 10,
+        "price": "32000.00",
+        "remains": 20,
+        "payment_method": "CASH",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 30,
+    "fields": {
+        "shop": 2,
+        "product": 11,
+        "price": "55000.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 31,
+    "fields": {
+        "shop": 4,
+        "product": 11,
+        "price": "560050.00",
+        "remains": 20,
+        "payment_method": "CASH",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 32,
+    "fields": {
+        "shop": 1,
+        "product": 11,
+        "price": "54999.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "FREE"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 33,
+    "fields": {
+        "shop": 1,
+        "product": 12,
+        "price": "28000.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 34,
+    "fields": {
+        "shop": 2,
+        "product": 12,
+        "price": "27000.00",
+        "remains": 20,
+        "payment_method": "CASH",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 35,
+    "fields": {
+        "shop": 3,
+        "product": 12,
+        "price": "28000.00",
+        "remains": 20,
+        "payment_method": "CASH",
+        "delivery_method": "FREE"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 36,
+    "fields": {
+        "shop": 4,
+        "product": 13,
+        "price": "3300.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 37,
+    "fields": {
+        "shop": 2,
+        "product": 13,
+        "price": "3200.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 38,
+    "fields": {
+        "shop": 3,
+        "product": 13,
+        "price": "3199.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 39,
+    "fields": {
+        "shop": 1,
+        "product": 14,
+        "price": "3500.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "FREE"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 40,
+    "fields": {
+        "shop": 2,
+        "product": 14,
+        "price": "3600.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 41,
+    "fields": {
+        "shop": 3,
+        "product": 14,
+        "price": "3499.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 42,
+    "fields": {
+        "shop": 4,
+        "product": 14,
+        "price": "3450.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 43,
+    "fields": {
+        "shop": 4,
+        "product": 15,
+        "price": "38000.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "FREE"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 44,
+    "fields": {
+        "shop": 2,
+        "product": 15,
+        "price": "39000.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 45,
+    "fields": {
+        "shop": 3,
+        "product": 15,
+        "price": "39999.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "EXPRESS"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 46,
+    "fields": {
+        "shop": 1,
+        "product": 16,
+        "price": "1199.00",
+        "remains": 30,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 47,
+    "fields": {
+        "shop": 2,
+        "product": 16,
+        "price": "1299.00",
+        "remains": 15,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 48,
+    "fields": {
+        "shop": 3,
+        "product": 16,
+        "price": "1099.00",
+        "remains": 23,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 49,
+    "fields": {
+        "shop": 4,
+        "product": 16,
+        "price": "1149.00",
+        "remains": 41,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 50,
+    "fields": {
+        "shop": 1,
+        "product": 17,
+        "price": "7099.00",
+        "remains": 10,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 51,
+    "fields": {
+        "shop": 2,
+        "product": 17,
+        "price": "6999.00",
+        "remains": 34,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 52,
+    "fields": {
+        "shop": 3,
+        "product": 17,
+        "price": "7599.00",
+        "remains": 10,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 53,
+    "fields": {
+        "shop": 4,
+        "product": 17,
+        "price": "6949.00",
+        "remains": 47,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 54,
+    "fields": {
+        "shop": 1,
+        "product": 18,
+        "price": "25999.00",
+        "remains": 10,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 55,
+    "fields": {
+        "shop": 2,
+        "product": 18,
+        "price": "27999.00",
+        "remains": 3,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 56,
+    "fields": {
+        "shop": 3,
+        "product": 18,
+        "price": "23999.00",
+        "remains": 52,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 57,
+    "fields": {
+        "shop": 4,
+        "product": 18,
+        "price": "24499.00",
+        "remains": 14,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 58,
+    "fields": {
+        "shop": 1,
+        "product": 19,
+        "price": "17399.00",
+        "remains": 4,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 59,
+    "fields": {
+        "shop": 2,
+        "product": 19,
+        "price": "20199.00",
+        "remains": 2,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 60,
+    "fields": {
+        "shop": 1,
+        "product": 20,
+        "price": "21999.00",
+        "remains": 22,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 61,
+    "fields": {
+        "shop": 3,
+        "product": 20,
+        "price": "21899.00",
+        "remains": 10,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 62,
+    "fields": {
+        "shop": 1,
+        "product": 21,
+        "price": "18399.00",
+        "remains": 25,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 63,
+    "fields": {
+        "shop": 2,
+        "product": 21,
+        "price": "17399.00",
+        "remains": 2,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 64,
+    "fields": {
+        "shop": 3,
+        "product": 21,
+        "price": "19099.00",
+        "remains": 5,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 65,
+    "fields": {
+        "shop": 4,
+        "product": 21,
+        "price": "19499.00",
+        "remains": 19,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 66,
+    "fields": {
+        "shop": 1,
+        "product": 22,
+        "price": "9999.00",
+        "remains": 31,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 67,
+    "fields": {
+        "shop": 2,
+        "product": 22,
+        "price": "10099.00",
+        "remains": 19,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 68,
+    "fields": {
+        "shop": 3,
+        "product": 22,
+        "price": "11999.00",
+        "remains": 3,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 69,
+    "fields": {
+        "shop": 4,
+        "product": 22,
+        "price": "10499.00",
+        "remains": 8,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 70,
+    "fields": {
+        "shop": 1,
+        "product": 23,
+        "price": "17499.00",
+        "remains": 21,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 71,
+    "fields": {
+        "shop": 2,
+        "product": 23,
+        "price": "17999.00",
+        "remains": 23,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 72,
+    "fields": {
+        "shop": 4,
+        "product": 23,
+        "price": "15999.00",
+        "remains": 48,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 73,
+    "fields": {
+        "shop": 1,
+        "product": 24,
+        "price": "136499.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 74,
+    "fields": {
+        "shop": 3,
+        "product": 24,
+        "price": "145399.00",
+        "remains": 12,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 75,
+    "fields": {
+        "shop": 1,
+        "product": 25,
+        "price": "39799.00",
+        "remains": 32,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 76,
+    "fields": {
+        "shop": 3,
+        "product": 25,
+        "price": "35999.00",
+        "remains": 149,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 77,
+    "fields": {
+        "shop": 1,
+        "product": 26,
+        "price": "19499.00",
+        "remains": 58,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 78,
+    "fields": {
+        "shop": 2,
+        "product": 26,
+        "price": "19499.00",
+        "remains": 23,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 79,
+    "fields": {
+        "shop": 3,
+        "product": 26,
+        "price": "19999.00",
+        "remains": 34,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 80,
+    "fields": {
+        "shop": 4,
+        "product": 26,
+        "price": "16999.00",
+        "remains": 45,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 81,
+    "fields": {
+        "shop": 1,
+        "product": 27,
+        "price": "2399.00",
+        "remains": 89,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 82,
+    "fields": {
+        "shop": 2,
+        "product": 27,
+        "price": "2299.00",
+        "remains": 56,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 83,
+    "fields": {
+        "shop": 3,
+        "product": 27,
+        "price": "2999.00",
+        "remains": 31,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 84,
+    "fields": {
+        "shop": 4,
+        "product": 27,
+        "price": "2099.00",
+        "remains": 78,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 85,
+    "fields": {
+        "shop": 1,
+        "product": 28,
+        "price": "3299.00",
+        "remains": 50,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 86,
+    "fields": {
+        "shop": 2,
+        "product": 28,
+        "price": "2599.00",
+        "remains": 13,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 87,
+    "fields": {
+        "shop": 3,
+        "product": 28,
+        "price": "3249.00",
+        "remains": 29,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 88,
+    "fields": {
+        "shop": 4,
+        "product": 28,
+        "price": "3999.00",
+        "remains": 10,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 89,
+    "fields": {
+        "shop": 1,
+        "product": 29,
+        "price": "1699.00",
+        "remains": 48,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 90,
+    "fields": {
+        "shop": 2,
+        "product": 29,
+        "price": "1999.00",
+        "remains": 4,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 91,
+    "fields": {
+        "shop": 3,
+        "product": 29,
+        "price": "1499.00",
+        "remains": 16,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 92,
+    "fields": {
+        "shop": 4,
+        "product": 29,
+        "price": "1499.00",
+        "remains": 25,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 93,
+    "fields": {
+        "shop": 1,
+        "product": 30,
+        "price": "97499.00",
+        "remains": 21,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 94,
+    "fields": {
+        "shop": 2,
+        "product": 30,
+        "price": "109999.00",
+        "remains": 4,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 95,
+    "fields": {
+        "shop": 1,
+        "product": 31,
+        "price": "27999.00",
+        "remains": 47,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 96,
+    "fields": {
+        "shop": 2,
+        "product": 31,
+        "price": "26199.00",
+        "remains": 67,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 97,
+    "fields": {
+        "shop": 3,
+        "product": 31,
+        "price": "31999.00",
+        "remains": 2,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 98,
+    "fields": {
+        "shop": 4,
+        "product": 31,
+        "price": "23999.00",
+        "remains": 199,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 99,
+    "fields": {
+        "shop": 1,
+        "product": 32,
+        "price": "10999.00",
+        "remains": 78,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 100,
+    "fields": {
+        "shop": 3,
+        "product": 32,
+        "price": "15199.00",
+        "remains": 394,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 101,
+    "fields": {
+        "shop": 1,
+        "product": 33,
+        "price": "185999.00",
+        "remains": 42,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 102,
+    "fields": {
+        "shop": 2,
+        "product": 33,
+        "price": "189999.00",
+        "remains": 21,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 103,
+    "fields": {
+        "shop": 3,
+        "product": 33,
+        "price": "200099.00",
+        "remains": 150,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 104,
+    "fields": {
+        "shop": 4,
+        "product": 33,
+        "price": "180999.00",
+        "remains": 12,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 105,
+    "fields": {
+        "shop": 1,
+        "product": 34,
+        "price": "43999.00",
+        "remains": 41,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 106,
+    "fields": {
+        "shop": 4,
+        "product": 34,
+        "price": "45999.00",
+        "remains": 11,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 107,
+    "fields": {
+        "shop": 1,
+        "product": 35,
+        "price": "42499.00",
+        "remains": 54,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 108,
+    "fields": {
+        "shop": 2,
+        "product": 35,
+        "price": "43199.00",
+        "remains": 10,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 109,
+    "fields": {
+        "shop": 3,
+        "product": 35,
+        "price": "46099.00",
+        "remains": 6,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 110,
+    "fields": {
+        "shop": 4,
+        "product": 35,
+        "price": "40999.00",
+        "remains": 34,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 111,
+    "fields": {
+        "shop": 1,
+        "product": 36,
+        "price": "54799.00",
+        "remains": 84,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 112,
+    "fields": {
+        "shop": 2,
+        "product": 36,
+        "price": "55099.00",
+        "remains": 23,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 113,
+    "fields": {
+        "shop": 1,
+        "product": 37,
+        "price": "34999.00",
+        "remains": 67,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 114,
+    "fields": {
+        "shop": 2,
+        "product": 37,
+        "price": "34999.00",
+        "remains": 22,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 115,
+    "fields": {
+        "shop": 3,
+        "product": 37,
+        "price": "36149.00",
+        "remains": 89,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 116,
+    "fields": {
+        "shop": 4,
+        "product": 37,
+        "price": "33999.00",
+        "remains": 13,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 117,
+    "fields": {
+        "shop": 1,
+        "product": 38,
+        "price": "149999.00",
+        "remains": 36,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 118,
+    "fields": {
+        "shop": 2,
+        "product": 38,
+        "price": "150999.00",
+        "remains": 25,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 119,
+    "fields": {
+        "shop": 4,
+        "product": 38,
+        "price": "145999.00",
+        "remains": 81,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 120,
+    "fields": {
+        "shop": 1,
+        "product": 39,
+        "price": "44899.00",
+        "remains": 98,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 121,
+    "fields": {
+        "shop": 2,
+        "product": 39,
+        "price": "44999.00",
+        "remains": 78,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 122,
+    "fields": {
+        "shop": 3,
+        "product": 39,
+        "price": "48999.00",
+        "remains": 73,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 123,
+    "fields": {
+        "shop": 4,
+        "product": 39,
+        "price": "43499.00",
+        "remains": 45,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 124,
+    "fields": {
+        "shop": 1,
+        "product": 40,
+        "price": "12999.00",
+        "remains": 57,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 125,
+    "fields": {
+        "shop": 2,
+        "product": 40,
+        "price": "13999.00",
+        "remains": 23,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 126,
+    "fields": {
+        "shop": 3,
+        "product": 40,
+        "price": "11999.00",
+        "remains": 59,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 127,
+    "fields": {
+        "shop": 4,
+        "product": 40,
+        "price": "11999.00",
+        "remains": 32,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 128,
+    "fields": {
+        "shop": 1,
+        "product": 41,
+        "price": "59999.00",
+        "remains": 30,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 129,
+    "fields": {
+        "shop": 4,
+        "product": 41,
+        "price": "65199.00",
+        "remains": 21,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 130,
+    "fields": {
+        "shop": 2,
+        "product": 42,
+        "price": "17399.00",
+        "remains": 10,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 131,
+    "fields": {
+        "shop": 4,
+        "product": 42,
+        "price": "73999.00",
+        "remains": 10,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 132,
+    "fields": {
+        "shop": 1,
+        "product": 43,
+        "price": "349999.00",
+        "remains": 16,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 133,
+    "fields": {
+        "shop": 1,
+        "product": 44,
+        "price": "85999.00",
+        "remains": 12,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 134,
+    "fields": {
+        "shop": 2,
+        "product": 44,
+        "price": "81999.00",
+        "remains": 19,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 135,
+    "fields": {
+        "shop": 3,
+        "product": 44,
+        "price": "83199.00",
+        "remains": 11,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+},
+{
+    "model": "shops.offer",
+    "pk": 136,
+    "fields": {
+        "shop": 4,
+        "product": 44,
+        "price": "82099.00",
+        "remains": 20,
+        "payment_method": "CARD",
+        "delivery_method": "REGULAR"
+    }
+}
+]

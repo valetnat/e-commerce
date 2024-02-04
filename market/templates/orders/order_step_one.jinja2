@@ -1,0 +1,71 @@
+{% extends 'orders/order_base.jinja2' %}
+
+
+{% block title %}
+{{_('Заказ товара. Шаг 1')}}
+{% endblock %}
+
+
+{% block step_one %}
+{% include "profiles/activate_menu.jinja2" %}
+{% endblock %}
+
+{% block order_content %}
+    <h2 class="Section-title">{{_('Шаг 1. Параметры пользователя')}}
+    </h2>
+<form method="post">
+    {% csrf_token %}
+    <div class="row">
+        <div class="row-block">
+            <div class="form-group">
+            <label for="first_name">{{_('Имя')}}</label>
+                {{ form.first_name }}
+            </div>
+
+            <div class="form-group">
+            <label for="last_name">{{_('Фамилия')}}</label>
+                {{ form.last_name }}
+            </div>
+
+
+            <div class="form-group">
+            <label for="phone">{{_('Телефон')}}</label>
+                {{ form.phone }}
+            </div>
+
+            <div class="form-group">
+            <label for="username">{{_('Имя пользователя отображаемое на сайте')}}</label>
+            {{ form.username }}
+            </div>
+        </div>
+
+        <div class="row-block">
+
+            <div class="form-group">
+              <label class="form-label" for="password">{{_('Пароль')}}
+              </label>
+              <input class="form-input" id="password1" name="password" type="password" placeholder="{{_('Тут можно изменить пароль')}}"/>
+
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="passwordReply">Подтверждение пароля
+              </label>
+              <input class="form-input" id="passwordReply" name="password2" type="password" placeholder="{{_('Введите пароль повторно')}}"/>
+              <div class="form-input_error">{{ form.password2.errors }}</div>
+            </div>
+
+            <div class="form-group">
+            <label for="email">{{_('Email')}}</label>
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+<!--                <label for="username"></label>-->
+
+            </div>
+
+        </div>
+<!--        <div class="row-block"></div>-->
+    </div>
+    <button type="submit" class="btn btn_success Order-next" >{{_('Далее')}}</button>
+</form>
+{% endblock %}

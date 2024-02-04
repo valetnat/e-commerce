@@ -1,0 +1,28 @@
+{% extends 'shops/base_shop.jinja2' %}
+
+{% block title %}
+{{_("Информация о магазине")}} {{ shop.name }}
+{% endblock %}
+
+{% block active_shop_update %}
+{% include "profiles/activate_menu.jinja2" %}
+{% endblock %}
+
+
+{% block shop_content %}
+<div class="Account-colimn">
+
+<form method="post">
+
+    {% csrf_token %}
+    {% if object.avatar %}
+      <img src="{{ object.avatar.url }}" alt="Логотип магазина" style="max-height: 300px;">
+    {% else %}
+      <p>{{_("У магазина нет авата")}}</p>
+    {% endif %}
+    {{ form.as_p() }}
+
+<button type="submit">{{_("Обновить")}}</button>
+</form>
+</div>
+{% endblock %}

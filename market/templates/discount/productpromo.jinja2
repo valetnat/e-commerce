@@ -1,0 +1,11 @@
+{% extends "discount/base_promo.jinja2" %}
+
+{% block product_card_price %}
+    {{object.value}}% на цену предложения.
+{% endblock %}
+
+
+{% block discount_type %}
+
+    {% include "discount/product_promo_cards.jinja2" %}
+{% endblock %}

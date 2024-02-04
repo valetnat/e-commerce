@@ -1,0 +1,23 @@
+{% if desc == "on" %}
+    {% set add_sort_class="Sort-sortBy_dec" %}
+    {% set new_desc="off" %}
+{% else %}
+    {% set add_sort_class="Sort-sortBy_inc" %}
+    {% set new_desc="on" %}
+{% endif %}
+
+<div class="Sort">
+    <div class="Sort-title">{{_("Сортировать по:")}}</div>
+    <div class="Sort-variants">
+        {% for name, title in sort_items %}
+            {% if sort == name %}
+                {% set current=True %}
+            {% endif %}
+            <a class="Sort-sortBy{% if current %} {{ add_sort_class }}{% endif %}"
+               name={{ name }}
+               target="_self"
+               href="{{ request.path }}?page={{ page_obj.number }}&sort={{ name }}&desc={{ new_desc }}{{ filter_params.to_string('&') }}{{ tag_params.to_string('&') }}{{ category_params.to_string('&') }}">{{ _(title) }}</a>
+
+        {% endfor %}
+    </div>
+</div>

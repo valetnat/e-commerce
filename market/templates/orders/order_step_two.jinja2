@@ -1,0 +1,40 @@
+{% extends 'orders/order_base.jinja2' %}
+
+
+{% block title %}
+{{_('Заказ товара. Шаг 2')}}
+{% endblock %}
+
+
+{% block step_two %}
+{% include "profiles/activate_menu.jinja2" %}
+{% endblock %}
+
+{% block order_content %}
+
+<form class="form" action="" method="post">{% csrf_token %}
+<div class="Order-block Order-block_OPEN" id="step2">
+  <header class="Section-header Section-header_sm">
+    <h2 class="Section-title">{{_('Шаг 2. Способ доставки')}}
+    </h2>
+  </header>
+  <div class="form-group">
+    {{ form.delivery_type }}
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="city">{{_('Город')}}
+      {{ form.city }}
+    </label>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="address">{{_('Адрес')}}
+      {{ form.address }}
+    </label>
+  </div>
+  <div class="Order-footer">
+    <button class="btn btn_success" type="submit">{{_('Дальше')}}</button>
+  </div>
+</div>
+</form>
+
+{% endblock %}

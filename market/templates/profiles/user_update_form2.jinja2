@@ -1,0 +1,35 @@
+{% extends 'profiles/account_base.jinja2' %}
+
+{% block title %}
+{{_("Информация о пользователе")}}
+{% endblock %}
+
+
+{% block activate_profile %}
+{% include "profiles/activate_menu.jinja2" %}
+{% endblock %}
+
+
+{% if user.is_authenticated %}
+    {% block account_content %}
+        <div class="Profile">
+            <div class="row-block">
+                <h2 class="Section-title">{{_("Редактирование профиля")}}</h2>
+                <h3 class="header">{{_("Здравствуйте,")}} {{ user.username }}</h3>
+            </div>
+        </div>
+        <div class="row">
+<!--============ Изменение информации о пользователе!  НАЧАЛО ============-->
+            <div class="row-block">
+               <form method="post" enctype="multipart/form-data">
+                   {% csrf_token %}
+                   {{ form.as_p() }}
+               <button type="submit">{{_("Обновить информацию")}}</button>
+               </form>
+
+            </div>
+            <div class="row-block"></div>
+        </div>
+    {% endblock %}
+<!--============ Изменение информации о пользователе!  КОНЕЦ ============-->
+{% endif %}

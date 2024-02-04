@@ -1,0 +1,106 @@
+[
+  {
+    "model": "discount.productcategoryset",
+    "pk": 1,
+    "fields": {
+      "name": "Набор наушники AirPods Pro2",
+      "products": [
+        6
+      ],
+      "categories": []
+    }
+  },
+  {
+    "model": "discount.productcategoryset",
+    "pk": 2,
+    "fields": {
+      "name": "Набор все телефоны Apple",
+      "products": [
+        5,
+        39
+      ],
+      "categories": []
+    }
+  },
+  {
+    "model": "discount.productcategoryset",
+    "pk": 3,
+    "fields": {
+      "name": "Набор микроволновых печей",
+      "products": [],
+      "categories": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "discount.productcategoryset",
+    "pk": 4,
+    "fields": {
+      "name": "Набор кухонных плит",
+      "products": [],
+      "categories": [
+        11
+      ]
+    }
+  },
+  {
+    "model": "discount.productcategoryset",
+    "pk": 5,
+    "fields": {
+      "name": "Набор всей техники Xiaomi",
+      "products": [
+        40,
+        41,
+        38
+      ],
+      "categories": []
+    }
+  },
+  {
+    "model": "discount.productcategoryset",
+    "pk": 6,
+    "fields": {
+      "name": "Набор Wireless Mouse + Колонки",
+      "products": [
+        2
+      ],
+      "categories": [
+        14
+      ]
+    }
+  },
+  {
+    "model": "discount.productcategoryset",
+    "pk": 7,
+    "fields": {
+      "name": "Все телефоны",
+      "products": [],
+      "categories": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "discount.productcategoryset",
+    "pk": 8,
+    "fields": {
+      "name": "Все фотоаппараты",
+      "products": [],
+      "categories": [
+        7
+      ]
+    }
+  },
+  {
+    "model": "discount.productcategoryset",
+    "pk": 9,
+    "fields": {
+      "name": "Все наушники",
+      "products": [],
+      "categories": [
+        13
+      ]
+    }
+  }
+]

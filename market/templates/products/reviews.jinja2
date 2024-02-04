@@ -1,0 +1,93 @@
+<div class="Tabs-block" id="reviews">
+    <header class="Section-header">
+        <h3 class="Section-title">
+<!--          не удалять!!! строка для i18n {{_('отзыв')}} {{_('отзывов')}}-->
+            {{ ngettext('%(num)d ' + _('отзыв'), '%(num)d ' + _('отзывов'), reviews | length) }}
+        </h3>
+    </header>
+    {% for review in page_obj %}
+        <div class="Comments">
+            <div class="Comment">
+                <div class="Comment-column Comment-column_pict">
+                    {% if review.user.avatar %}
+                        <div style="width: 100px;">
+                            <img src="{{ review.user.avatar.url }}" width="100%"  style="margin: 0" alt="avatar">
+                        </div>
+                    {% else %}
+                        <div class="Comment-avatar">
+<!--                            <img src="#" alt="avatar">-->
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="Comment-column">
+                    <header class="Comment-header">
+                        <div>
+                            <strong class="Comment-title"> {{ review.user.username }}
+                            </strong><span class="Comment-date">
+                            {{ _(review.created_at.strftime('%a')) }} / {{ review.created_at.strftime('%d / %Y / %H:%M') }}
+                        </span>
+                        </div>
+                    </header>
+                    <div class="Comment-content"> {{ review.review_content }}</div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    <div class="paginator" style="display: flex; flex-direction: row; gap: 10px; margin-top: 20px">
+        {% if page_obj.has_previous() %}
+            <div style="display: flex">
+                {% if page_obj.number != 2 %}
+                    <a href="?page=1"><span>&laquo; 1</span></a>
+                    <span>...</span>
+                    <a href="?page={{ page_obj.previous_page_number() }}"> {{ page_obj.previous_page_number() }}</a>
+                {% else %}
+                    <a href="?page={{ page_obj.previous_page_number() }}">&laquo;{{ page_obj.previous_page_number() }}</a>
+                {% endif %}
+            </div>
+        {% endif%}
+
+        {% if reviews | length() > page_obj.paginator.per_page %}
+             <span style="color: #71747a">{{ page_obj.number }}</span>
+        {% endif %}
+
+        {% if page_obj.has_next() %}
+            <div style="display: flex">
+                 {% if page_obj.number == (page_obj.paginator.num_pages - 1) %}
+                     <a href="?page={{ page_obj.next_page_number() }}">{{ page_obj.next_page_number() }}&raquo;</a>
+                 {% else %}
+                     <a href="?page={{ page_obj.next_page_number() }}">{{ page_obj.next_page_number() }}</a>
+                     <span>...</span>
+                     <a href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}&raquo;</a>
+                {% endif %}
+            </div>
+        {% endif%}
+    </div>
+
+    {% if user.is_authenticated %}
+        <header class="Section-header Section-header_product">
+            <h3 class="Section-title">{{_("Добавить отзыв")}}
+            </h3>
+        </header>
+        <div class="Tabs-addComment">
+            <form class="form" action="#" method="post">
+                {% csrf_token %}
+                {{ form.as_p() }}
+                <div class="form-group">
+                    <button class="btn btn_primary" type="submit">{{_("Отправить отзыв")}}
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    {% else %}
+        <header class="Section-header Section-header_product">
+            {% set url_profile_login = url('profiles:login') %}
+            {% trans %}
+            <div class="">Чтобы оставить отзыв, вам нужно
+                <a href="{{url_profile_login}}" style="">авторизоваться</a>
+            </div>
+            {% endtrans %}
+        </header>
+    {% endif %}
+</div>

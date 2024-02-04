@@ -1,0 +1,20 @@
+[
+{
+    "model": "site_settings.sitesettings",
+    "pk": 1,
+    "fields": {
+        "default_price_from": "10.00",
+        "default_price_to": "1000.00",
+        "default_sort": "pk",
+        "default_sort_type": "famous",
+        "default_sort_desc": "on",
+        "paginate_by": 8,
+        "pagination_on_each_side": 2,
+        "pagination_on_ends": 1,
+        "categories_list_cache_timeout": 3600,
+        "banner_limit": 3,
+        "offer_limit": 8,
+        "foreground_category_limit": 3
+    }
+}
+]

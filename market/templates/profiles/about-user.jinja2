@@ -1,0 +1,91 @@
+{% extends 'profiles/account_base.jinja2' %}
+
+{% block title %}
+{{_("Информация о пользователе")}}
+{% endblock %}
+
+
+{% block activate_cabinet %}
+{% include "profiles/activate_menu.jinja2" %}
+{% endblock %}
+
+
+{% block account_content %}
+<div class="Profile">
+    <div class="row-block">
+        <h2 class="Section-title">{{_("Страница детальной информации")}}</h2>
+        <h3 class="header">{{_("Здравствуйте,")}} {{ user.username }}</h3>
+    </div>
+</div>
+<div class="row">
+<!--========================================== AVATAR!  НАЧАЛО  ==========================================-->
+    <div class="row-block">
+        {% if user.avatar %}
+        <div class="form-group">
+
+            <div class="Profile-avatar">
+            <p style="display: flex; just"><img src="{{ user.avatar.url }}" alt="{{ user.avatar.name }}" height="268px"></p>
+            </div>
+             <div class="form-group">
+                <label class="form-label" for="avatar-new">{{_("Сменить аватар")}}</label>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="Profile-avatar Profile-avatar_noimg" style="height: 80px;">
+                        <label class="Profile-fileLabel" for="avatar-new">
+                            <img src="{{ static('assets/img/icons/upload.png') }}" alt="#.png" />
+                            {{_("Загрузить фото")}}</label>
+                        <input type="file" id="avatar-new" class="Profile-file form-input" accept="image/*" name="user_avatar" data-validate="onlyImgAvatar"></label>
+                    </div>
+                   <button type="submit" class="btn btn_square btn_dark" style="margin-top:80px">{{_("Обновить аватар")}}</button>
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label class="form-label" for="avatar">{{_("Аватар")}}</label>
+                <div class="Profile-avatar Profile-avatar_noimg">
+                <label class="Profile-fileLabel" for="avatar">
+                    <img src="{{ static('assets/img/icons/upload.png') }}" alt="#.png" />
+                    {{_("Загрузить фото")}}</label>
+                <input type="file" id="avatar" class="Profile-file form-input" accept="image/*" name="user_avatar" data-validate="onlyImgAvatar"></label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn_square btn_dark" style="margin-top:80px">{{_("Обновить аватар")}}</button>
+        </form>
+
+        {% endif%}
+
+    </div>
+<!--========================================== AVATAR!  КОНЕЦ  ==========================================-->
+<!--========================================== Информация пользователя пользователя!  НАЧАЛО  ==========================================-->
+    <div class="row-block">
+        <h3>{{_("Информация о пользователе")}}</h3>
+        <p class="Cart-title">{{_("Никнейм пользователя:")}} {{ user.username }}</p>
+        <p class="Cart-title">{{_("Имя:")}} {{ user.first_name }}</p>
+        <p class="Cart-title">{{_("Фамилия:")}} {{ user.last_name }}</p>
+        <p class="Cart-title">{{_("Email:")}} {{ user.email }}</p>
+        <p class="Cart-title">{{_("Телефон:")}} {{ user.phone }}</p>
+        <p class="Cart-title">{{_("Город проживания:")}} {{ user.residence }}</p>
+        <p class="Cart-title">{{_("Адрес:")}} {{ user.address }}</p>
+        <a class="btn btn_square btn_dark" href="{{ url('profiles:update-info', pk=user.pk) }}" style="margin-bottom: 15px;">{{_("Изменить профиль")}}</a>
+    </div>
+<!--========================================== Информация пользователя пользователя!  КОНЕЦ  ==========================================-->
+</div>
+<!--========================================== Раздел история просмотра товаров!  НАЧАЛО  ==========================================-->
+{% if history %}
+<div class="row-block">
+        <h2></h2>
+        <h3 class="header">{{_("Вы смотрели")}}</h3>
+</div>
+
+<div class="Account-group">
+   {% for product in history %}
+       {% include "profiles/product_card.jinja2" %}
+   {% endfor %}
+</div>
+<a href="{{url('profiles:browsing_history')}}" class="btn btn_square btn_dark" style="margin-bottom: 15px;">{{_("Перейти к полной истории")}}</a>
+{% endif %}
+<!--========================================== Раздел история просмотра товаров!  КОНЕЦ  ==========================================-->
+{% endblock %}

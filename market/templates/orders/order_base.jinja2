@@ -1,0 +1,51 @@
+{% extends 'base.jinja2' %}
+
+{% block title %}
+
+{% endblock %}
+
+
+{% block middle %}
+
+<div class="Middle Middle_top">
+    <div class="Section Section_column Section_columnRight Section_columnWide Order">
+        <div class="wrap">
+            <div class="Section-column">
+                {% block sidebar %}
+                <div class="Section-columnSection">
+                    <header class="Section-header">
+                        <strong class="Section-title">
+                            {{_("Прогресс заполнения")}}
+                        </strong>
+                    </header>
+                    <div class="Section-columnContent">
+                        <div class="NavigateProfile">
+                            <ul class="menu menu_vt">
+                                <li class="{% block step_one %} menu-item {% endblock %}"><a class="menu-link" href="#step1">
+                                    {{_("Шаг 1. Параметры пользователя")}}</a>
+                                </li>
+                                <li class="{% block step_two %} menu-item {% endblock %}"><a class="menu-link" href="#step2">
+                                    {{_("Шаг 2. Способ доставки")}}</a>
+                                </li>
+                                <li class="{% block step_three %} menu-item {% endblock %}"><a class="menu-link" href="#step3">
+                                    {{_("Шаг 3. Способ оплаты")}}</a>
+                                </li>
+                                <li class="{% block step_four %} menu-item {% endblock %}"><a class="menu-link" href="#step4">
+                                    {{_("Шаг 4. Подтверждение заказа")}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endblock %}
+            </div>
+            <div class="Section-content">
+                {% block order_content %}
+
+                {% endblock %}
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

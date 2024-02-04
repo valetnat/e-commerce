@@ -1,0 +1,20 @@
+<header class="Section-header">
+    <h2 class="Section-title">{{_("Товары участвующие в акции:")}}</h2>
+</header>
+<div class="Cards">
+    {% for product in all_products(object) %}
+        <div class="Card">
+            <a class="Card-picture" href="{{ url('products:product-detail', pk=product.pk ) }}"><img src="{{ product.preview.url }}" alt="card.jpg" style="width: 200px;"/></a>
+            <div class="Card-content">
+                <strong class="Card-title"><a href="{{ url('products:product-detail', pk=product.pk ) }}">{{ product.about }}</a>
+                </strong>
+                <div class="Card-description">
+                    <div class="Card-cost"><span class="Card-price">{{ product.offers.first().price }}₽</span>
+                    </div>
+                    <div class="Card-category">{{ product.category.name }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,76 @@
+{% extends 'base.jinja2' %}
+
+{% block title %}
+{{_("Home page")}}
+{% endblock %}
+
+{% block banner %}
+    <div class="Header-slider">
+        <div class="Slider Slider_main">
+            <div class="Slider-box">
+                {% for banner in banners %}
+                    <div class="Slider-item">
+                        <div class="Slider-content">
+                            <div class="row">
+                                <div class="row-block">
+                                    <strong class="Slider-title">
+                                        <span class="text_primary">{{ banner.name }}</span>
+                                    </strong>
+                                    <div class="Slider-text">{{ banner.description }}</div>
+                                    <div class="Slider-footer">
+                                        {% set start_str = _("Начать") %}
+                                        {% if banner.category %}
+                                            <a class="btn btn_primary" href="{{ url ('catalog:index') }}?category_id={{ banner.category.pk }}">{{start_str}}</a>
+                                        {% elif banner.product %}
+                                            <a class="btn btn_primary" href="{{ url ('catalog:index') }}?sort=famous&desc=on&search={{ banner.product.name }}">{{start_str}}</a>
+                                        {% elif banner.offer %}
+                                            <a class="btn btn_primary" href="{{ url('products:product-detail', pk=banner.offer.product.pk ) }}">{{start_str}}</a>
+                                        {% else %}
+                                            <a class="btn btn_primary" href="#">{{start_str}}</a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row-block">
+                                    <div class="Slider-img"><img src="{{ banner.image.url }}"
+                                                                 alt="slider.png" style="max-height: 500px;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="Slider-navigateWrap">
+                <div class="Slider-navigate">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block middle %}
+    <div class="Middle">
+        <div class="Section">
+            {% include "products/min_offers.jinja2" %}
+        </div>
+        {% include "cart/add_cart.jinja2" %}
+        {% include "comparison/add_comparison.jinja2" %}
+        <div class="Section Section_column Section_columnLeft Section_columnDesktop">
+            <div class="wrap">
+                <div class="Section-column">
+                    {% include "products/limited_offer.jinja2" %}
+                </div>
+                <div class="Section-content">
+                    {% include "products/famous_products.jinja2" %}
+                </div>
+            </div>
+        </div>
+        <div class="Section Section_column Section_columnRight">
+            <div class="wrap">
+                <div class="Section-content">
+                    {% include "products/limited_products.jinja2" %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.jinja2' %}
+
+{% block middle %}
+<!--<h1 class="title"> PAY VIEW </h1>-->
+
+<div class="Middle Middle_top">
+        <div class="Middle-top">
+            <div class="wrap">
+                <div class="Middle-header">
+                    <h1 class="Middle-title">Оплата
+                    </h1>
+                    <ul class="breadcrumbs Middle-breadcrumbs">
+                        <li class="breadcrumbs-item"><a href="index.html">home</a>
+                        </li>
+                        <li class="breadcrumbs-item breadcrumbs-item_current"><span>Оплата</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <div class="wrap">
+                <form class="form Payment" action="{{url('payapp:account_validate', order_pk)}}" method="post">
+                    {% csrf_token %}
+                    <div class="Payment-card">
+                        <div class="form-group">
+                            <label class="form-label">Номер карты
+                            </label>
+                            <input class="form-input Payment-bill" id="numero1" name="banc_account" type="text" >
+                        </div>
+                    </div>
+                    {% if button %}
+                        {% include "payapp/generator_button.jinja2" %}
+                    {% endif %}
+                    <div class="Payment-pay"><button class="btn btn_primary" type="submit">Оплатить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!--placeholder="9999 9999" data-mask="9999 9999"-->
+<!-- data-mask="9999 9999" data-validate="require pay" -->
+{% endblock %}

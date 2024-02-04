@@ -1,0 +1,52 @@
+{% extends 'base.jinja2' %}
+
+{% block title %}
+Название страницы магазина
+{% endblock %}
+
+
+{% block middle %}
+
+<div class="Middle Middle_top">
+  <div class="Section Section_column Section_columnLeft">
+    <div class="wrap">
+    {# {% block shop_sidebar %} #}
+      <div class="Section-column">
+        <div class="Section-columnSection">
+          <header class="Section-header">
+            <strong class="Section-title">Навигация</strong>
+          </header>
+          <div class="Section-columnContent">
+            <div class="NavigateProfile">
+              <ul class="menu menu_vt">
+                <li class="{% block active_shop %} menu-item {% endblock%}">
+                  <a class="menu-link" href="{{ url('shops:shop_detail', pk=shop.pk) }}">Информация о магазине</a>
+                </li>
+                <li class="{% block active_shop_update %} menu-item {% endblock%}"><a class="menu-link" href="{{ url('shops:shop-update', pk=shop.pk)}}">Редактировать информацию</a>
+                </li>
+                <li class="{% block active_shop_products %} menu-item {% endblock%}"><a class="menu-link" href="{{ url('shops:shop_products', pk=shop.pk) }}">Товары магазина</a>
+                </li>
+                <li class="{% block active_import_products %} menu-item {% endblock%}"><a class="menu-link" href="{{ url('importdata:importdata') }}">Импортировать продукты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    {# {% endblock %} #}
+       <div class="Section-content">
+         <div class="Account">
+           <div class="Account-group">
+<!--             <div class="Account-column">-->
+      {% block shop_content %}
+
+      {% endblock %}
+<!--              </div>-->
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

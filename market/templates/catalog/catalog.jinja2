@@ -1,0 +1,25 @@
+{% extends "base.jinja2" %}
+
+{% block title -%}
+{{_("Catalog page")}}
+{% endblock %}
+
+{% block middle %}
+<div class="Middle Middle_top">
+    <div class="Section Section_column Section_columnLeft">
+        <div class="wrap">
+            <div class="Section-column">
+                {% include "catalog/filter.jinja2" %}
+                {% include "catalog/tags.jinja2" %}
+            </div>
+            <div class="Section-content">
+                {% include "cart/add_cart.jinja2" %}
+                {% include "comparison/add_comparison.jinja2" %}
+                {% include "catalog/sort.jinja2" %}
+                {% include "catalog/content.jinja2" %}
+                {% include "catalog/pagination.jinja2" %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

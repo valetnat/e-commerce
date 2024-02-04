@@ -1,0 +1,15 @@
+<div class="ProgressPayment">
+    <div class="ProgressPayment-title">{{_("Ждем подтверждения оплаты платежной системой")}}
+    </div>
+    <div class="ProgressPayment-icon">
+        <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+        </div>
+    </div>
+    <div style="margin: 40px;">
+        <a class="btn btn_primary" href="{{url('payapp:status', order.pk)}}">Обновить</a>
+    </div>
+</div>

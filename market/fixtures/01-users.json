@@ -1,0 +1,178 @@
+[
+{
+    "model": "profiles.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$uFoayEVK85jyvMvxQb4Rfd$abncQV++A61pKt9jtWAtaYgBbV2kPM7b8dKyMpoeyeU=",
+        "last_login": "2023-09-27T08:37:33.660Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "admin",
+        "last_name": "admin",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-09-10T10:39:46.481Z",
+        "email": "admin@admin.com",
+        "phone": "+7(999)123-12-10",
+        "residence": "Moscow",
+        "address": "Zamoskvorechnaya",
+        "avatar": "profiles/1/avatar/card_HlUVSQa.jpg",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$ISWfGJiydiKgKvRSb0Xw0B$PfkyvWtI38j93g8soPh76Hi1+2uG0FkGwDIeRgIgH9Y=",
+        "last_login": "2023-09-24T10:58:34.903Z",
+        "is_superuser": false,
+        "username": "retailer1",
+        "first_name": "Smart",
+        "last_name": "Phones",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-09-10T10:44:50.839Z",
+        "email": "retailer1@mail.com",
+        "phone": "+7(999)123-12-11",
+        "residence": "California",
+        "address": "One Apple Park Way Cupertino, CA 95014",
+        "avatar": "profiles/2/avatar/111smart.png",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$zYlo7ESnfaRGTZKklEgGt5$wRqZdObJNKU7yR9yvGX9hbr0bvpAH67Cxl5D8jv4dXo=",
+        "last_login": "2023-09-16T15:44:42.134Z",
+        "is_superuser": false,
+        "username": "client",
+        "first_name": "Jhon",
+        "last_name": "Smith",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-10T10:49:23.554Z",
+        "email": "client@mail.com",
+        "phone": "+7(999)123-12-12",
+        "residence": "Tagil",
+        "address": "Test address dom 148 test appartament",
+        "avatar": "profiles/3/avatar/card.jpg",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$njZXnzneAAEzusK4MehVcf$Ac3KdcgDVY1WX4ctpCGwaIDAp1rYNbDduBflpbtFNLg=",
+        "last_login": "2023-09-24T11:38:03.565Z",
+        "is_superuser": false,
+        "username": "retailer2",
+        "first_name": "retailer2",
+        "last_name": "retailer2",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-19T17:16:26.058Z",
+        "email": "retailer2@mail.com",
+        "phone": "+7(999)123-12-13",
+        "residence": "retailer residence 2",
+        "address": "retailer address 2",
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$n3cBOquALon2GN7Q9SCJPX$+ErwLBInO6huTVex3z3ck3pKhseFXSdKHAK2X7taAns=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "retailer3",
+        "first_name": "retailer3",
+        "last_name": "retailer3",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-19T17:16:26.426Z",
+        "email": "retailer3@mail.com",
+        "phone": "+7(999)123-12-14",
+        "residence": "retailer residence 3",
+        "address": "retailer address 3",
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$4fjaU83yb7oU6yJubeSRaw$aoFd6WcgCvpoltUR1IxqNn8MV1KYg0GcHUna/Uq9hlQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "retailer4",
+        "first_name": "retailer4",
+        "last_name": "retailer4",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-19T17:16:26.776Z",
+        "email": "retailer4@mail.com",
+        "phone": "+7(999)123-12-15",
+        "residence": "retailer residence 4",
+        "address": "retailer address 4",
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$HlZFVaNjxIRBi1p394Athp$8zxfK22O/Ixw9UQhMiePEMNrM0IzUNV/gkuJ/zgiXt8=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "retailer5",
+        "first_name": "retailer5",
+        "last_name": "retailer5",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-19T17:16:27.125Z",
+        "email": "retailer5@mail.com",
+        "phone": "+7(999)123-12-16",
+        "residence": "retailer residence 5",
+        "address": "retailer address 5",
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$0WEyH802O1KOOSNcPzuRUM$yETwnkLUyyB5VV9xY+hrxvOurj0GMHPwuqQDDmYorKo=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "retailer6",
+        "first_name": "retailer6",
+        "last_name": "retailer6",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-19T17:16:27.473Z",
+        "email": "retailer6@mail.com",
+        "phone": "+7(999)123-12-17",
+        "residence": "retailer residence 6",
+        "address": "retailer address 6",
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

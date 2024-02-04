@@ -1,0 +1,71 @@
+{% extends "base.jinja2" %}
+
+{% block middle %}
+<div class="Middle Middle_top">
+        <div class="Middle-top">
+            <div class="wrap">
+                <div class="Middle-header">
+
+                    <ul class="breadcrumbs Middle-breadcrumbs">
+                        <li class="breadcrumbs-item"><a href="{{url('products:home-page')}}">{{ _("Главная") }}</a>
+                        </li>
+                        <li class="breadcrumbs-item"><a href="{{url('discount:discount-list')}}">{{ _("Скидки") }}</a>
+                        </li>
+                        <li class="breadcrumbs-item breadcrumbs-item_current"><span>{{object.name}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <div class="wrap">
+
+                <div class="ProductCard">
+                    <div class="ProductCard-look">
+                        <div class="ProductCard-photo">
+
+                            {% if object.preview %}
+                            <img src="{{object.preview.url}}" alt=" {{object.name}} preview">
+                            {% else %}
+                            <img src="{{object.preview}}" alt=" {{object.name}} preview">
+                            {% endif %}
+
+                            <div class="Card-date">
+                                <strong class="Card-date-number">{{object.active_from.strftime('%d')}}
+                                </strong><span class="Card-date-month">{{_(object.active_from.strftime('%b'))}}</span>
+                            </div>
+                            {% if (object.active_to - object.active_from).days > 1 %}
+                            <div class="Card-date Card-date_to">
+                                <strong class="Card-date-number">{{object.active_to.strftime('%d')}}
+                                </strong><span class="Card-date-month">{{_(object.active_to.strftime('%b'))}}</span>
+                            </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                    <div class="ProductCard-desc">
+                        <div class="ProductCard-header">
+                            <h2 class="ProductCard-title"> {{object.name}}
+                            </h2>
+                            <div class="ProductCard-info">
+                                <div class="ProductCard-cost">
+                                    <div class="ProductCard-price">
+                                        {% block product_card_price %}
+                                            {{object.value}} ₽
+                                        {% endblock %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ProductCard-text">
+                            {{object.description}}
+                        </div>
+                    </div>
+                </div>
+                {% block discount_type %}
+                {% endblock %}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

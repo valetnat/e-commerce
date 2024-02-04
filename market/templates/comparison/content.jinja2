@@ -1,0 +1,139 @@
+{% if not error %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="different">{{_("Только различающиеся характеристики")}}
+            <input type="hidden" id="different" name="different" value="1">
+            <input type="checkbox" id="different" name="different" value="0" {% if not display_diff_details %} checked="checked"{% endif %}>
+        </label>
+        <button class="btn btn_primary" type="submit">
+            <span class="btn-content">{{_("Фильтр")}}</span>
+        </button>
+    </form>
+
+    <div class="Product">
+        <div class="ProductCard">
+            {% for key, value in objects_list.items() %}
+                <div class="ProductCard-desc">
+                    <div class="ProductCard-header" style="padding-bottom: 0">
+                        <h2 class="ProductCard-title">{{ value['name'] }}</h2>
+                        <div class="ProductCard-look" style="width: 100%">
+                            <div class="ProductCard-photo" style="min-height: 400px">
+                                <img src="{{ value['preview'] }}" width="218" height="auto" alt="product image">
+                            </div>
+                        </div>
+                        <div class="Tabs Tabs_default">
+                            <div class="Tabs-wrap">
+                                <div class="Tabs-block" id="description">
+                                    <div class="table">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="hed">{{_("Характеристика")}}</th>
+                                                    <th class="hed">{{_("Значение")}}</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{_("Тип")}}</td>
+                                                    <td>{{ value['category']}}</td>
+                                                </tr>
+                                                {% if common and display_diff_details == 1 %}
+                                                    <tr class="comparis">
+                                                        <td><b>{{_("Общ.параметры")}}</b></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    {% for k, v in value['detail'].items() | sort()  %}
+                                                        {% if k in common %}
+                                                            <tr>
+                                                                <td>{{ k }}</td>
+                                                                <td>{{ v }}</td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                {% endif %}
+                                                {% if diff %}
+                                                    <tr class="comparis">
+                                                        <td><b>{{_("Отл. параметры")}}</b></td>
+                                                        <td></td>
+                                                    </tr>
+
+                                                    {% for k, v in value['detail'].items()|sort() %}
+                                                        {% if k in diff %}
+
+                                                            <tr>
+                                                                <td>{{ k }}</td>
+                                                                <td>{{ v }}</td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="{{ url('comparison:comparison_delete') }}" method="post">
+                        {% csrf_token %}
+                        <div class="ProductCard-cart">
+                            <div class="ProductCard-cartElement">
+                                <input type="hidden" id="product_id" name="product_id" value="{{ key }}">
+                                <button class="btn btn_primary" type="submit">
+                                    <img class="btn-icon" src="{{ static('assets/img/icons/card/delete_white.svg') }}" alt="del.svg">
+                                    <span class="btn-content">{{_("Удалить из списка")}}</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    <div>
+
+{% elif error and objects_list|length() == 0 %}
+    <div class="Section-title"> {{ error }} </div>
+
+{% elif error and objects_list|length() != 0 %}
+    <div class="Section-title"> {{ error }} </div>
+    <div class="Tabs Tabs_default" style="max-width: 80%">
+        <div class="Tabs-block" id="description">
+            <div class="table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th class="hed">{{_("Название")}}</th>
+                            <th class="hed"></th>
+                            <th class="hed"></th>
+                        </tr>
+                        {% for key, value in objects_list.items() %}
+                            <tr>
+                                <td>{{ value['name'] }}</td>
+                                <td>
+                                    <div>
+                                        <div style="min-height: 100px">
+                                            <img src="{{ value['preview'] }}" width="50" height="auto" alt="product image" style="margin-top: 0">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <form action="{{ url('comparison:comparison_delete') }}" method="post">
+                                        {% csrf_token %}
+                                        <input type="hidden" id="product_id" name="product_id" value="{{ key }}">
+                                        <button class="btn btn_primary" type="submit">
+                                            <img class="btn-icon" src="{{ static('assets/img/icons/card/delete_white.svg') }}" alt="del.svg">
+                                            <span class="btn-content">{{_("Удалить")}}</span>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <a href="{{ url('comparison:comparison_delete') }}" class="btn btn_primary">
+                    <img class="btn-icon" src="{{ static('assets/img/icons/card/delete_white.svg') }}" alt="del.svg">
+                    <span class="btn-content">{{_("Очистить список")}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endif %}

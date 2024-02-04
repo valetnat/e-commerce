@@ -1,0 +1,222 @@
+[
+{
+    "model": "products.manufacturer",
+    "pk": 1,
+    "fields": {
+        "name": "Apple",
+        "slug": "apple",
+        "created_at": "2023-09-26T10:33:38.748Z",
+        "modified_at": "2023-09-26T10:55:03.580Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 2,
+    "fields": {
+        "name": "Xiaomi",
+        "slug": "xiaomi",
+        "created_at": "2023-09-26T10:35:47.842Z",
+        "modified_at": "2023-09-26T10:53:54.954Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 3,
+    "fields": {
+        "name": "Dell",
+        "slug": "dell",
+        "created_at": "2023-09-26T10:35:58.278Z",
+        "modified_at": "2023-09-26T10:53:59.404Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 4,
+    "fields": {
+        "name": "HP",
+        "slug": "hp",
+        "created_at": "2023-09-26T10:36:07.954Z",
+        "modified_at": "2023-09-26T10:54:04.833Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 5,
+    "fields": {
+        "name": "Microsoft",
+        "slug": "microsoft",
+        "created_at": "2023-09-26T10:36:18.770Z",
+        "modified_at": "2023-09-26T10:54:12.341Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 6,
+    "fields": {
+        "name": "Яндекс",
+        "slug": "yandex",
+        "created_at": "2023-09-26T10:36:41.639Z",
+        "modified_at": "2023-09-26T10:54:19.228Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 7,
+    "fields": {
+        "name": "Другие",
+        "slug": "other",
+        "created_at": "2023-09-26T10:36:54.224Z",
+        "modified_at": "2023-09-26T10:54:24.044Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 8,
+    "fields": {
+        "name": "Aceline",
+        "slug": "acline",
+        "created_at": "2023-09-26T10:38:09.133Z",
+        "modified_at": "2023-09-26T10:54:30.606Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 9,
+    "fields": {
+        "name": "Acer",
+        "slug": "acer",
+        "created_at": "2023-09-26T10:38:33.834Z",
+        "modified_at": "2023-09-26T10:54:35.245Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 10,
+    "fields": {
+        "name": "Hisense",
+        "slug": "hisense",
+        "created_at": "2023-09-26T10:39:11.854Z",
+        "modified_at": "2023-09-26T10:54:42.538Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 11,
+    "fields": {
+        "name": "Weissgauff",
+        "slug": "weissgauff",
+        "created_at": "2023-09-26T10:39:30.105Z",
+        "modified_at": "2023-09-26T10:54:49.930Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 12,
+    "fields": {
+        "name": "REALME",
+        "slug": "realme",
+        "created_at": "2023-09-26T10:46:14.211Z",
+        "modified_at": "2023-09-26T10:54:56.476Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 13,
+    "fields": {
+        "name": "DEXP",
+        "slug": "dexp",
+        "created_at": "2023-10-25T13:31:25.551Z",
+        "modified_at": "2023-10-25T13:31:25.551Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 14,
+    "fields": {
+        "name": "Razer",
+        "slug": "razer",
+        "created_at": "2023-10-25T13:31:51.237Z",
+        "modified_at": "2023-10-25T13:31:51.237Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 15,
+    "fields": {
+        "name": "LG",
+        "slug": "lg",
+        "created_at": "2023-10-25T13:32:49.913Z",
+        "modified_at": "2023-10-25T13:32:49.913Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 16,
+    "fields": {
+        "name": "Samsung",
+        "slug": "samsung",
+        "created_at": "2023-10-25T13:33:09.886Z",
+        "modified_at": "2023-10-25T13:33:09.886Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 17,
+    "fields": {
+        "name": "ASUS",
+        "slug": "asus",
+        "created_at": "2023-10-25T13:33:35.838Z",
+        "modified_at": "2023-10-25T13:33:35.838Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 18,
+    "fields": {
+        "name": "JBL",
+        "slug": "jbl",
+        "created_at": "2023-10-25T13:34:07.300Z",
+        "modified_at": "2023-10-25T13:34:07.300Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 19,
+    "fields": {
+        "name": "Canon",
+        "slug": "canon",
+        "created_at": "2023-10-25T13:35:26.935Z",
+        "modified_at": "2023-10-25T13:35:26.935Z",
+        "archived": false
+    }
+},
+{
+    "model": "products.manufacturer",
+    "pk": 20,
+    "fields": {
+        "name": "Nikon",
+        "slug": "nikon",
+        "created_at": "2023-10-25T13:36:02.095Z",
+        "modified_at": "2023-10-25T13:36:02.095Z",
+        "archived": false
+    }
+}
+]

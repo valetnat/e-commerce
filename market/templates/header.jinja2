@@ -1,0 +1,139 @@
+<header class="Header">
+    <div class="ControlPanel">
+        <div class="wrap">
+            <div class="row ControlPanel-row">
+                <div class="row-block">
+                    <div class="row ControlPanel-rowSplit">
+                        <div class="row-block hide_700">
+                            <ul class="menu menu_img menu_smallImg ControlPanel-menu">
+                                <li class="menu-item">
+                                  <a class="menu-link" href="#">
+                                      <img src="{{ static('assets/img/icons/socialHeader/tw.svg') }}" alt="tw.svg"/>
+                                  </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="{{ static('assets/img/icons/socialHeader/in.svg') }}" alt="in.svg"/>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="{{ static('assets/img/icons/socialHeader/pt.svg') }}" alt="pt.svg"/>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">
+                                        <img src="{{ static('assets/img/icons/socialHeader/mail.svg') }}" alt="mail.svg"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="row-block">
+                    <div class="row ControlPanel-rowSplit">
+                        <div class="row-block">
+                            {% if user.is_authenticated %}
+
+                            <!--                            <a class="ControlPanel-title" href="{{ url('profiles:register') }}">Регистрация</a>-->
+                            <!--                            <a class="ControlPanel-title" href="{{ url('profiles:login') }}">Вход</a>-->
+                            <!--                            <a class="ControlPanel-title" href="{{ url('profiles:register') }}">Регистрация</a>-->
+
+                            <a class="ControlPanel-title" href="{{ url('profiles:logout') }}">  {{_('Выход')}} </a>
+                            <a class="ControlPanel-title" href="{{ url('profiles:about-user') }}">{% trans %} Профиль {% endtrans %}</a>
+                            {% else %}
+                            <a class="ControlPanel-title" href="{{ url('profiles:login') }}">{{_('Вход')}}</a>
+                            <a class="ControlPanel-title" href="{{ url('profiles:register') }}">{{_('Регистрация')}}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--+div.menuModal#navigate
+    //    +menu([
+    //        ['Главная','index.html'],
+    //        ['Портфолио','index.html'],
+    //        ['Мои проекты','index.html'],
+    //        ['Контакты','index.html']
+    //    ], page === 'article'? 'Портфолио': 'Главная')._main
+
+    block
+    -->
+    <div class="wrap">
+        <div class="row Header-rowMain">
+            <div class="row-block Header-logo">
+                <a class="logo" href="{{ url('products:home-page') }}">
+                    <img class="logo-image" src="{{ static('assets/img/logo.png') }}" alt="logo.png"/>
+                </a>
+            </div>
+            <nav class="row-block row-block_right Header-menu">
+                <div class="menuModal" id="navigate">
+                    <ul class="menu menu_main">
+                        <li class="menu-item">
+                            <a class="menu-link" href="{{ url('products:home-page') }}">{{_("Главная")}}</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="{{ url('discount:discount-list') }}"><span class="menu-label menu-label_success">{{_("Скидки")}}</span></a>
+                            <a class="menu-link" href="{{ url('catalog:index') }}">{{_("Каталог")}}</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="{{ url('comparison:comparison') }}">{{_("Сравнение")}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row-block">
+                <div class="CartBlock">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <img class="CartBlock-img"
+                                 src="{{ static('assets/img/icons/loon-icon.svg') }}"
+                                 alt="loon-icon.svg"/>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="dropdown-content-a" href="{{ url('profiles:about-user') }}">{{_("Личный кабинет")}}</a>
+                            <a class="dropdown-content-a" href="{{ url('admin:index') }}">{{_("Административный раздел")}}</a>
+                            <a class="dropdown-content-a" href="{{ url('profiles:logout') }}">{{_("Выход")}}</a>
+                        </div>
+                    </div>
+                    <a class="CartBlock-block" href="{{url('cart:user_cart')}}">
+                        <img class="CartBlock-img" src="{{ static('assets/img/icons/cart.svg') }}" alt="cart.svg"/>
+                        <span class="CartBlock-amount">
+                            {% if request.session.cart_size %}
+                                {{request.session.cart_size}}
+                            {% else %}
+                                0
+                            {% endif %}
+                        </span>
+                    </a>
+                    <div class="CartBlock-block">
+                        <span class="CartBlock-price">
+                            {% if request.session.cart_price %}
+                                {{request.session.cart_price}}₽
+                            {% else %}
+                                0.00₽
+                            {% endif %}
+                        </span>
+                    </div>
+                    <a class="CartBlock-block" href="{{ url('comparison:comparison') }}">
+                        <img class="CartBlock-img" src="{{ static('assets/img/icons/card/change.svg') }}" alt="comp.svg"/>
+                        <span class="CartBlock-amount">{{ comparison|length() }}</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row-block Header-trigger">
+                <a class="menuTrigger" href="#navigate">
+                    <div class="menuTrigger-content">{{_("Показать навигацию")}}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="Header-searchWrap">
+        <div class="wrap">
+            {% include "menu.jinja2" %}
+            {% include "search.jinja2" %}
+        </div>
+    </div>
+</header>

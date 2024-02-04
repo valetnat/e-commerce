@@ -1,0 +1,41 @@
+[
+{
+    "model": "products.banner",
+    "pk": 1,
+    "fields": {
+        "name": "Недельная Распродажа на ноутбуки",
+        "description": "Успейте приобрести ноутбуки со скидкой до 50%.",
+        "image": "img/banner/bf1ed92fa8afd7aeb5ec890a32b8a534a38ac352a6a49de0cf1edba7644cc553.jpg_GyE0vQs.webp",
+        "archived": false,
+        "category": 3,
+        "product": null,
+        "offer": null
+    }
+},
+{
+    "model": "products.banner",
+    "pk": 2,
+    "fields": {
+        "name": "Осень планшетов",
+        "description": "Приобретите гаджет вашей мечты! Эта осень совершает сезон планшетов.",
+        "image": "img/banner/072af205dfe170e655e9bcba72bf48f41c5a618593a457d23ca590f1adb87346.jpg_bonafQ1.webp",
+        "archived": false,
+        "category": 4,
+        "product": null,
+        "offer": null
+    }
+},
+{
+    "model": "products.banner",
+    "pk": 3,
+    "fields": {
+        "name": "iPhone 14 Pro Max",
+        "description": "Приобретите iPhone со скидкой 10%.",
+        "image": "img/banner/preview_1.webp",
+        "archived": false,
+        "category": null,
+        "product": 5,
+        "offer": null
+    }
+}
+]

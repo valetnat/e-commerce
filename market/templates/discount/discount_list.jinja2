@@ -1,0 +1,30 @@
+{% extends "base.jinja2" %}
+
+{% block middle %}
+<div class="Middle Middle_top">
+        <div class="Middle-top">
+            <div class="wrap">
+                <div class="Middle-header">
+
+                    <ul class="breadcrumbs Middle-breadcrumbs">
+                        <li class="breadcrumbs-item"><a href="{{url('products:home-page')}}">{{ _("Главная") }}</a>
+                        </li>
+                        <li class="breadcrumbs-item breadcrumbs-item_current"><span>{{ _("Скидки") }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Section">
+            <div class="wrap">
+                <div class="Cards Cards_blog">
+                    {% for promo in promos %}
+                        {% include "discount/discount_card.jinja2" %}
+                    {% endfor %}
+                </div>
+
+                {% include "discount/pagination.jinja2" %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

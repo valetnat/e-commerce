@@ -1,0 +1,52 @@
+{% extends "base.jinja2" %}
+
+{% block title -%}
+{{_("Корзина")}}
+{% endblock %}
+
+{% block middle %}
+<div class="Middle Middle_top">
+        <div class="Section">
+            <div class="wrap">
+                <form class="form Cart" id="cart_form" method="post">
+                {% csrf_token %}
+                {% if offer_list %}
+                <h2 class="Section-title"> {{_("Ваша корзина:")}}</h2>
+
+                    {% for offer in offer_list %}
+                    {% set iter_count = loop.index0 %}
+                     {% include "cart/cart_record.jinja2" %}
+                    {% endfor %}
+                    <div class="Cart-total">
+                        <div class="Cart-block Cart-block_total">
+                            <table>
+                            <tr>
+                                <td><strong class="Cart-title">{{_("Цена без скидки:")}}</strong></td>
+                                <td><span class="Cart-price">{{ request.session.cart_price}} р</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong class="Cart-title">{{_("Скидка:")}} </strong></td>
+                                <td><span class="Cart-price">{{ discount_amount}} р </span></td>
+                            </tr>
+                            <tr>
+                                <td><p class="Cart-desc" style="margin-top: 0"> {{_("Тип скидки:")}} {% if discount_name %} {{ discount_name }}
+                                {% elif discount_amount | int == 0 %} отсутствует {% else %} скидка на отдельные виды товаров {% endif %} </p></td>
+                            </tr>
+                            <tr>
+                                <td><strong class="Cart-title">{{_("ИТОГО:")}}</strong></td>
+                                <td><span class="Cart-price">{{ total_price }} р</span></td>
+                            </tr>
+                            </table>
+                        </div>
+                        {% for button in buttons %}
+                        <div class="Cart-block" style="margin: 10px 0px"><input type="submit" name="action" value="{{button}}" class="btn btn_success btn_lg" style="width: 100%;  font-size: 120%">
+                        {% endfor %}
+                    </div>
+                </form>
+                {% else %}
+                <h2 class="Section-title"> {{_("Корзина пуста.")}}</h2>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

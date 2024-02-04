@@ -1,0 +1,13 @@
+{% extends 'base.jinja2'%}
+
+{% block title %}
+    {{ _("Страница импорта данных") }}
+{% endblock %}
+
+{% block middle %}
+    <div class="Middle">
+        <div class="wrap">
+            {% include "importdata/import_form.jinja2" %}
+        </div>
+    </div>
+{% endblock %}

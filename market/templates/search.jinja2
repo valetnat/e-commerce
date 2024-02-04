@@ -1,0 +1,23 @@
+<div class="Header-searchLink">
+    <img src="{{ static('assets/img/icons/search.svg') }}" alt="search.svg"/>
+</div>
+<div class="Header-search">
+    <div class="search">
+        {% set default_placeholder="NVIDIA GeForce RTX 3060" %}
+        <form class="form form_search"
+              action="{{ url('catalog:index') }}{% if current_category %}?category_id={{ current_category.pk }}{% endif %}"
+              method="post">
+            {% csrf_token %}
+            <input class="search-input"
+                   id="query"
+                   name="search"
+                   type="text"
+                   {% if search %}value="{{ search }}"{% endif %}
+                   placeholder="{% if search_placeholder %}{{ search_placeholder }}{% else %}{{ default_placeholder }}{% endif %}"/>
+            <button class="search-button" type="submit">
+                <img src="{{ static('assets/img/icons/search.svg') }}" alt="search.svg"/>
+                {{_('Поиск')}}
+            </button>
+        </form>
+    </div>
+</div>

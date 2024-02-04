@@ -1,0 +1,58 @@
+stages:
+  - code quality
+  - testing
+
+variables:
+  POSTGRES_DB: market
+  POSTGRES_USER: skillbox
+  POSTGRES_PASSWORD: secret
+  POSTGRES_HOST_AUTH_METHOD: trust
+
+services:
+  - name: redis:latest
+    alias: broker
+  - name: postgres:latest
+    alias: db
+
+default:
+  image: python:3.10.6
+  tags:
+    - students
+  before_script:
+    - apt-get update; apt-get install gettext git -y
+    - pip install poetry
+    - poetry --version
+    - poetry config virtualenvs.in-project true
+    - poetry install -vv
+
+flake8:
+  stage: code quality
+  script:
+    - poetry run flake8 market
+
+test:
+  stage: testing
+  when: always
+  variables:
+    DATABASE_URL: "postgresql://$POSTGRES_USER:$POSTGRES_PASSWORD@db:5432/$POSTGRES_DB"
+    REDIS_URL: "redis://broker:6379/0"
+    SECRET_KEY: "django-insecure-=e-i4dlx_qq&ra7un4)u8bdr#08q)gc_*yyy4@7--kt(0(p#!("
+    DEBUG: "True"
+    ALLOWED_HOSTS: "www.allowed.com www.host.com"
+    EMAIL_HOST: "smtp.gmail.com"
+    EMAIL_HOST_USER: "example@gmail.com"
+    EMAIL_HOST_PASSWORD: "example password"
+  script:
+    - echo "DATABASE_URL = $DATABASE_URL" >> .env
+    - echo "REDIS_URL = $REDIS_URL" >> .env
+    - echo "SECRET_KEY = $SECRET_KEY" >> .env
+    - echo "DEBUG = $DEBUG" >> .env
+    - echo "ALLOWED_HOSTS = $ALLOWED_HOSTS" >> .env
+    - echo "EMAIL_HOST = $EMAIL_HOST" >> .env
+    - echo "EMAIL_HOST_USER = $EMAIL_HOST_USER" >> .env
+    - echo "EMAIL_HOST_PASSWORD = $EMAIL_HOST_PASSWORD" >> .env
+    - cd market
+    - poetry run python manage.py makemigrations
+    - poetry run python manage.py makemessages -a -e html,txt,py,jinja2
+    - poetry run python manage.py compilemessages
+    - poetry run python manage.py test

@@ -1,0 +1,20 @@
+<div class="wrap">
+    <div class="BannersHome">
+        {% for min_offer in min_offers %}
+            <a class="BannersHomeBlock" href="{{ url('products:product-detail', pk=min_offer.product.pk ) }}">
+                <div class="BannersHomeBlock-row">
+                    <div class="BannersHomeBlock-block">
+                        <strong class="BannersHomeBlock-title">{{ min_offer.product.category.name }}
+                        </strong>
+                        <div class="BannersHomeBlock-content">от&#32;<span class="BannersHomeBlock-price">{{ min_offer.price }}₽</span>
+                        </div>
+                    </div>
+                    <div class="BannersHomeBlock-block">
+                        <div class="BannersHomeBlock-img"><img src="{{ min_offer.product.preview.url }}" alt="category.png" />
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</div>

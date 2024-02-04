@@ -1,0 +1,64 @@
+<div class="Header-categories">
+    <div class="CategoriesButton">
+        <div class="CategoriesButton-title">
+            <div class="CategoriesButton-icon">
+                {% if current_category %}
+                    {% if current_category.icon %}
+                        <img src="{{ current_category.icon.url }}" alt="{{ current_category.get_icon_name() }}"/>
+                    {% endif %}
+                {% else %}
+                    <img src="{{ static('assets/img/icons/allDep.svg') }}" alt="allDep.svg"/>
+                {% endif %}
+            </div>
+            <span class="CategoriesButton-text">
+                {% if current_category %}
+                    {{ current_category.name }}
+                {% else %}
+                    {{_("Все категории")}}
+                {% endif %}
+            </span>
+            <div class="CategoriesButton-arrow"></div>
+        </div>
+
+        <div class="CategoriesButton-content">
+            {% if current_category %}
+                <div class="CategoriesButton-link">
+                    <a href="{{ url ('catalog:index') }}">
+                        <div class="CategoriesButton-icon">
+                            <img src="{{ static('assets/img/icons/allDep.svg') }}" alt="allDep.svg"/>
+                        </div>
+                        <span class="CategoriesButton-text">{{_("Все категории")}}</span>
+                    </a>
+                </div>
+            {% endif %}
+            {% for item in menu %}
+                <div class="CategoriesButton-link">
+                    <a href="{{ url ('catalog:index') }}?category_id={{ item.category.pk }}">
+                        {% if item.category.icon %}
+                            <div class="CategoriesButton-icon">
+                                <img src="{{ item.category.icon.url }}" alt="{{ item.category.get_icon_name() }}"/>
+                            </div>
+                        {% endif %}
+                        <span class="CategoriesButton-text">{{ item.category.name }}</span>
+                    </a>
+
+                    {% if item.submenu %}
+                        <a class="CategoriesButton-arrow"></a>
+                        <div class="CategoriesButton-submenu">
+                            {% for subitem in item.submenu %}
+                                <a href="{{ url ('catalog:index') }}?category_id={{ subitem.category.pk }}">
+                                    {% if subitem.category.icon %}
+                                        <div class="CategoriesButton-icon">
+                                            <img src="{{ subitem.category.icon.url }}" alt="{{ subitem.category.get_icon_name() }}"/>
+                                        </div>
+                                    {% endif %}
+                                    <span class="CategoriesButton-text">{{ subitem.category.name }}</span>
+                                </a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="Slider Slider_carousel" style="margin-bottom: 100px;">
+    <header class="Section-header Section-header_close">
+        <h2 class="Section-title">{{_("Набор товаров")}} "{{set.name}}"</h2>
+        <div class="Section-control">
+            <div class="Slider-navigate"></div>
+        </div>
+    </header>
+    <div class="Slider-box Cards">
+        {% for product in products_in_set(set) %}
+            <div class="Slider-item">
+                <div class="Slider-content">
+                    <div class="Card"><a class="Card-picture" href="{{ url('products:product-detail', pk=product.pk ) }}"><img src="{{ product.preview.url }}" alt="card.jpg" style="width: auto;max-width: 200px;max-height: 200px;height: auto;"/></a>
+                        <div class="Card-content">
+                            <strong class="Card-title"><a href="{{ url('products:product-detail', pk=product.pk ) }}">{{ product.name }}</a>
+                            </strong>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

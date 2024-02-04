@@ -1,0 +1,41 @@
+<!-- Подразумевается что этот шаблон используется в цикле, переменные cart = UserOfferCart() -->
+<div class="Cart-product">
+
+    <div class="Cart-block Cart-block_row">
+        <div class="Cart-block Cart-block_pict"><a class="Cart-pict" href="#"><img class="Cart-img" src="{{offer.product.preview.url}}" alt="product_preview.jpg"></a>
+        </div>
+        <div class="Cart-block Cart-block_info"><a class="Cart-title" href="#">{{offer.product.name}}</a>
+            <div class="Cart-desc">{{offer.product.about}}
+            </div>
+        </div>
+        <div class="Cart-block Cart-block_price">
+            <div class="Cart-price">{{ offer.price }}</div>
+            <div class="Cart-desc">Магазин: {{ offer.shop.name }}</div>
+            <div class="Cart-desc">Остаток на складе: {{ offer.remains }} шт.</div>
+        </div>
+    </div>
+    <div class="Cart-block Cart-block_row">
+        <div class="Cart-block Cart-block_seller">
+            <!-- - var options = setOptions(items, ['value', 'selected', 'disabled']);-->
+
+        </div>
+        <div class="Cart-block Cart-block_amount">
+            <div class="Cart-amount">
+                <div class="Amount">
+                    <button class="Amount-remove" type="button">
+                    </button>
+                    <input type="hidden" name="offer_id[{{iter_count}}]" value="{{ offer.pk }}">
+                    <input class="Amount-input form-input" name="amount[{{iter_count}}]" type="number" style="appearance: textfield; height: 100%; " min="0" max="999{# {{ offer.remains }} #}"  required  value="{{cart[offer.pk]}}">
+                    <button class="Amount-add" type="button">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="Cart-block Cart-block_delete">
+            <a class="Cart-delete" href="{{url('cart:delete_cart') + '?offer_id=' }}{{offer.pk}}">
+                <img src="{{static('assets/img/icons/card/delete.svg')}}" alt="delete.svg">
+            </a>
+        </div>
+
+    </div>
+</div>

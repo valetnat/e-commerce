@@ -1,0 +1,37 @@
+<header class="Section-header">
+    <h2 class="Section-title">{{_("Популярные товары")}}</h2>
+</header>
+<div class="Cards">
+    {% for offer in offers %}
+        <div class="Card">
+            <a class="Card-picture" href="{{ url('products:product-detail', pk=offer.product.pk ) }}"><img src="{{ offer.product.preview.url }}" alt="card.jpg" style="width: 200px;"/></a>
+            <div class="Card-content">
+                <strong class="Card-title"><a href="{{ url('products:product-detail', pk=offer.product.pk ) }}">{{ offer.product.about }}</a>
+                </strong>
+                <div class="Card-description">
+                    <div class="Card-cost"><span class="Card-price">{{ offer.price }}₽</span>
+                    </div>
+                    <div class="Card-category">{{ offer.product.category.name }}
+                    </div>
+                    <div class="Card-hover">
+                         <form action="{{ url('cart:add_cart') }}" method="post">
+                             {% csrf_token %}
+                             <input type="hidden" name="offer_id" value="{{ offer.pk }}">
+                             <input type="hidden" name="amount" value="1">
+                             <button class="Card-btn" type="submit" onmouseover="this.style.backgroundColor='#d2e7ff';" onmouseout="this.style.backgroundColor='#ebebeb';">
+                                 <img src="{{ static('assets/img/icons/card/cart.svg') }}" alt="cart.svg"/>
+                             </button>
+                         </form>
+                         <form action="{{ url('comparison:comparison_add') }}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" id="product_id" name="product_id" value="{{ offer.product.pk }}">
+                            <button class="Card-btn" type="submit" onmouseover="this.style.backgroundColor='#d2e7ff';" onmouseout="this.style.backgroundColor='#ebebeb';">
+                                <img src="{{ static('assets/img/icons/card/change.svg') }}" alt="change.svg"/>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

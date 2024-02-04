@@ -1,0 +1,10 @@
+{% extends "discount/base_promo.jinja2" %}
+
+{% block discount_type %}
+
+    {% for set in object.sets.all() %}
+        {% include "discount/product_category_set.jinja2" %}
+    {% endfor %}
+
+
+{% endblock %}

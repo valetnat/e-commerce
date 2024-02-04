@@ -1,0 +1,27 @@
+{% extends 'profiles/account_base.jinja2' %}
+
+{% block title %}
+{{_("История просмотра пользователя")}}
+{% endblock %}
+
+
+{% block history_product %}
+{% include "profiles/activate_menu.jinja2" %}
+{% endblock %}
+
+{% block account_content %}
+    <div class="Profile">
+        <div class="row-block">
+            <h2 class="Section-title">{{_("Ваша история просмотра")}}</h2>
+        </div>
+    </div>
+    {% if history %}
+    <div class="Cards">
+        {% for product in history %}
+        {% include "profiles/product_card.jinja2" %}
+        {% endfor %}
+    </div>
+    {% else %}
+        <p class="Cart-title">{{_("Тут будет ваша история посещения страницы товаров")}}</p>
+    {% endif %}
+{% endblock %}
