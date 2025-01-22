@@ -2,17 +2,18 @@
 The marketplace platform with ability to register as a seller, export goods and start selling them.
 ## Navigation
   * [What can it do?](#what-can-it-do?)
-      * [Main page](#main-page)
-      * [Catalog](#catalog-page)
-      * [Product](#product-page)
-      * [Comparison page](#comparison-page)
-      * [Profile page](#profile-page)
-      * [Discount page](#discount-page)
-      * [Import page](#import-page)
-      * [Cart page](#cart-page)
-      * [Order page](#order-page)
   * [Getting started](#getting-started)
       * [Installation](#installation)
+  * [Pages screenshots](#pages-screenshots)
+    * [Main page](#main-page)
+    * [Catalog](#catalog-page)
+    * [Product](#product-page)
+    * [Comparison page](#comparison-page)
+    * [Profile page](#profile-page)
+    * [Discount page](#discount-page)
+    * [Import page](#import-page)
+    * [Cart page](#cart-page)
+    * [Order page](#order-page)
   * [Database layout](#database-layout)
 
 # What can it do?
@@ -29,34 +30,7 @@ The marketplace platform with ability to register as a seller, export goods and 
 ```/ru/order/``` - order and pay <br>
 ```etc``` <br>
 
-## Main page
-![main](screenshots/main.png)
 
-## Catalog page
-Catalog with filters
-![catalog](screenshots/catalog.png)
-
-## Product page
-![product_shops](screenshots/product_shops.png)
-![product_review](screenshots/reviews.png)
-
-## Comparison page
-![comparison](screenshots/compare.png)
-
-## Profile page
-![profile](screenshots/profile.png)
-
-## Discount page
-![sales](screenshots/sales.png)
-
-## Import page
-![import](screenshots/upload_form.png)
-
-## Cart page
-![cart](screenshots/cart.png)
-
-## Order page
-![order](screenshots/order.png)
 
 # Getting started
 
@@ -111,6 +85,36 @@ Catalog with filters
    ```shell
    python manage.py runserver 0.0.0.0:8000
    ```
+
+# Pages screenshots
+### Main page
+![main](screenshots/main.png)
+
+### Catalog page
+Catalog with filters
+![catalog](screenshots/catalog.png)
+
+### Product page
+![product_shops](screenshots/product_shops.png)
+![product_review](screenshots/reviews.png)
+
+### Comparison page
+![comparison](screenshots/compare.png)
+
+### Profile page
+![profile](screenshots/profile.png)
+
+### Discount page
+![sales](screenshots/sales.png)
+
+### Import page
+![import](screenshots/upload_form.png)
+
+### Cart page
+![cart](screenshots/cart.png)
+
+### Order page
+![order](screenshots/order.png)
 
 # Database layout
 ![db](screenshots/db_layout.png)
