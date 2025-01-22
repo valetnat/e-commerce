@@ -18,7 +18,7 @@ The marketplace platform with ability to register as a seller, export goods and 
 
 # What can it do?
 
-**Key endpoints that are available for users**
+**Key endpoints that are available for users:**
 <br> ```/ru/``` or ```/en/``` - main page <br>
 ```/ru/catalog/``` - products catalog <br>
 ```/ru/product/``` - product features <br>
@@ -28,7 +28,7 @@ The marketplace platform with ability to register as a seller, export goods and 
 ```/ru/cart/``` - user cart <br>
 ```/ru/discounts/``` - available sales <br>
 ```/ru/order/``` - order and pay <br>
-```etc``` <br>
+```etc...``` <br>
 
 
 
