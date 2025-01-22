@@ -1,5 +1,5 @@
 # E-commerce platform
-
+The marketplace platform with ability to register as a seller, export goods and start selling them.
 ## Navigation
   * [What can it do?](#what-can-it-do?)
       * [Main page](#main-page)
@@ -16,20 +16,18 @@
   * [Database layout](#database-layout)
 
 # What can it do?
-The marketplace platform with ability to register as a seller, export goods and start selling them.
 
 **Key endpoints that are available for users**
-
-```/ru/``` or ```/en/``` - main page 
-```/ru/catalog/``` - products catalog
-```/ru/product/``` - product features
-```/ru/comparison/``` - product comparison feature
-```/ru/profiles``` - user profile
-```/ru/importdata/``` - products import service
-```/ru/cart/``` - user cart
-```/ru/discounts/``` - available sales
-```/ru/order/``` - order and pay
-```etc```
+```/ru/``` or ```/en/``` - main page <br>
+```/ru/catalog/``` - products catalog <br>
+```/ru/product/``` - product features <br>
+```/ru/comparison/``` - product comparison feature <br>
+```/ru/profiles``` - user profile <br>
+```/ru/importdata/``` - products import service <br>
+```/ru/cart/``` - user cart <br>
+```/ru/discounts/``` - available sales <br>
+```/ru/order/``` - order and pay <br>
+```etc``` <br>
 
 ## Main page
 ![main](screenshots/main.png)
