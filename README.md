@@ -28,9 +28,7 @@ The marketplace platform with ability to register as a seller, export goods and 
 ```/ru/cart/``` - user cart <br>
 ```/ru/discounts/``` - available sales <br>
 ```/ru/order/``` - order and pay <br>
-```etc...``` <br>
-
-
+```etc ...``` <br>
 
 # Getting started
 
@@ -91,11 +89,10 @@ The marketplace platform with ability to register as a seller, export goods and 
 ![main](screenshots/main.png)
 
 ### Catalog page
-Catalog with filters
 ![catalog](screenshots/catalog.png)
 
 ### Product page
-![product_shops](screenshots/product_shops.png)
+![product shops](screenshots/product_shops.png)
 ![product_review](screenshots/reviews.png)
 
 ### Comparison page
@@ -117,4 +114,4 @@ Catalog with filters
 ![order](screenshots/order.png)
 
 # Database layout
-![db](screenshots/db_layout.png)
+![db_layout](screenshots/db_layout.png)
